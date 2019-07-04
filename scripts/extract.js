@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-const getEchantillonData = require('../lib/get_echantillon_data')
-const parseRecord = require('../lib/parse_record')
+const getEchantillonData = require('../lib/extract/get_echantillon_data')
+const parseRecord = require('../lib/extract/parse_record')
 const path = require('path')
 const fs = require('fs')
 
