@@ -1,8 +1,14 @@
 {
   "scripts": {
-    "extract": "./scripts/extract.js"
+    "extract": "./scripts/extract.js",
+    "test": "mocha tests/*js"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "xml2json": "^0.11.2"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "should": "^13.2.3"
   }
 }
