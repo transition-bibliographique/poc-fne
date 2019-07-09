@@ -18,9 +18,18 @@ describe('create pseudo properties from an interxmarc notice', () => {
       done()
     })
   })
-  describe('transform datacontrol', () => {
+  describe('transform controlfield', () => {
     it('should return an object of pseudo properties', done => {
       const propertyId = 'interxmarc:001:0001'
+      const properties = parseProperties(robertFlemingNotice)
+      const propertiesList = Object.keys(properties)
+      propertiesList.includes(propertyId).should.be.true()
+      done()
+    })
+  })
+  describe('transform leader', () => {
+    it('should return an object of pseudo properties', done => {
+      const propertyId = 'interxmarc:000:0004'
       const properties = parseProperties(robertFlemingNotice)
       const propertiesList = Object.keys(properties)
       propertiesList.includes(propertyId).should.be.true()
