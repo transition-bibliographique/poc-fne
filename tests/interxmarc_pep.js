@@ -4,17 +4,28 @@ const parseProperties = require('../lib/transform/parse_properties')
 const parseItems = require('../lib/transform/parse_items')
 
 describe('create pseudo properties from an interxmarc notice', () => {
-  it('should return an object of pseudo properties', done => {
-    const propertyId = 'interxmarc:031:a:0'
-    const properties = parseProperties(robertFlemingNotice)
-    properties.should.be.an.Object()
-    const propertiesList = Object.keys(properties)
-    propertiesList.should.be.an.Array()
-    propertiesList.includes(propertyId).should.be.true()
-    properties[propertyId].id.should.equal(propertyId)
-    properties[propertyId].aliases.fr.should.equal(propertyId)
-    properties[propertyId].datatype.should.equal('string')
-    done()
+  describe('transform datafield', () => {
+    it('should return an object of pseudo properties', done => {
+      const propertyId = 'interxmarc:031:a:0'
+      const properties = parseProperties(robertFlemingNotice)
+      properties.should.be.an.Object()
+      const propertiesList = Object.keys(properties)
+      propertiesList.should.be.an.Array()
+      propertiesList.includes(propertyId).should.be.true()
+      properties[propertyId].id.should.equal(propertyId)
+      properties[propertyId].aliases.fr.should.equal(propertyId)
+      properties[propertyId].datatype.should.equal('string')
+      done()
+    })
+  })
+  describe('transform datacontrol', () => {
+    it('should return an object of pseudo properties', done => {
+      const propertyId = 'interxmarc:001:0001'
+      const properties = parseProperties(robertFlemingNotice)
+      const propertiesList = Object.keys(properties)
+      propertiesList.includes(propertyId).should.be.true()
+      done()
+    })
   })
 })
 
@@ -40,7 +51,6 @@ describe('create a pseudo item from an interxmarc notice', () => {
   it('should return pseudo claims with date value', done => {
     const itemPropertyPseudoId = 'interxmarc:031:d:2'
     const item = parseItems(robertFlemingNotice)
-    item.claims.should.be.an.Object()
     item.claims[itemPropertyPseudoId].should.be.an.Array()
     item.claims[itemPropertyPseudoId][0].should.equal('2013-08-02')
     done()
