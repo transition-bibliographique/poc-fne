@@ -67,4 +67,14 @@ describe('create a pseudo item from an interxmarc notice', () => {
       done()
     })
   })
+  describe('transform leader', () => {
+    it('should return pseudo claims', done => {
+      const itemPropertyPseudoId = 'interxmarc:000:0004'
+      const item = parseItems(robertFlemingNotice)
+      item.claims.should.be.an.Object()
+      item.claims[itemPropertyPseudoId].should.be.an.Array()
+      item.claims[itemPropertyPseudoId][0].should.equal('00615')
+      done()
+    })
+  })
 })
