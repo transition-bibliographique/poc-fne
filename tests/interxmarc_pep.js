@@ -3,7 +3,7 @@ const robertFlemingNotice = require('./fixtures/RobertFleming_BnF_14797579.json'
 const parseProperties = require('../lib/transform/parse_properties')
 const parseItems = require('../lib/transform/parse_items')
 
-describe('create pseudo properties from an interxmarc notice', () => {
+describe('create pseudo properties from an interxmarc pep', () => {
   describe('transform datafield', () => {
     it('should return an object of pseudo properties', done => {
       const propertyId = 'interxmarc:031:a:0'
@@ -12,8 +12,9 @@ describe('create pseudo properties from an interxmarc notice', () => {
       const propertiesList = Object.keys(properties)
       propertiesList.should.be.an.Array()
       propertiesList.includes(propertyId).should.be.true()
-      properties[propertyId].id.should.equal(propertyId)
-      properties[propertyId].aliases.fr.should.equal(propertyId)
+      properties[propertyId].pseudoId.should.equal(propertyId)
+      properties[propertyId].labels.en.should.equal(propertyId)
+      properties[propertyId].labels.fr.should.equal(propertyId)
       properties[propertyId].datatype.should.equal('string')
       done()
     })
@@ -38,22 +39,15 @@ describe('create pseudo properties from an interxmarc notice', () => {
   })
 })
 
-describe('create a pseudo item from an interxmarc notice', () => {
+describe('create a pseudo item from an interxmarc pep', () => {
   describe('transform datafield', () => {
     it('should return a pseudo item id', done => {
-      const itemId = '0  b.Fleming.Robert.1921-1976'
+      const itemPseudoId = '0  b.Fleming.Robert.1921-1976'
       const item = parseItems(robertFlemingNotice)
       item.should.be.an.Object()
-      item.id.should.equal(itemId)
-      item.aliases.fr.should.equal(itemId)
-      done()
-    })
-
-    it('should return pseudo claims with date value', done => {
-      const itemPropertyPseudoId = 'interxmarc:031:d:2'
-      const item = parseItems(robertFlemingNotice)
-      item.claims[itemPropertyPseudoId].should.be.an.Array()
-      item.claims[itemPropertyPseudoId][0].should.equal('2013-08-02')
+      item.pseudoId.should.equal(itemPseudoId)
+      item.labels.en.should.equal(itemPseudoId)
+      item.labels.fr.should.equal(itemPseudoId)
       done()
     })
   })
