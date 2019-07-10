@@ -1,7 +1,7 @@
 {
   "scripts": {
     "extract": "./scripts/extract.js",
-    "test": "mocha tests/*js"
+    "test": "mocha tests/*js --timeout 20000"
   },
   "dependencies": {
     "lodash": "^4.17.11",
