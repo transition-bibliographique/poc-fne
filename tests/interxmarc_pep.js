@@ -3,7 +3,9 @@ const robertFlemingNotice = require('./fixtures/RobertFleming_BnF_14797579.json'
 const parseProperties = require('../lib/transform/parse_properties')
 const parseItems = require('../lib/transform/parse_items')
 
-describe('create pseudo properties from an interxmarc pep', () => {
+describe('create pseudo properties from an interxmarc pep', function () {
+  this.timeout(20000)
+
   describe('transform datafield', () => {
     it('should return an object of pseudo properties', done => {
       const propertyId = 'interxmarc:031:a:0'
