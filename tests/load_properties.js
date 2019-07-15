@@ -7,22 +7,29 @@ describe('load properties on wikibase', function () {
   this.timeout(20000)
 
   it('should return an object of Wikibase properties', done => {
-    const propertyId = 'interxmarc:008:3233'
     const properties = parseProperties(robertFlemingNotice)
-    // {
-    //   'interxmarc:008:3233': {
-    //     type: 'property',
-    //     pseudoId: 'interxmarc:008:3233',
-    //     datatype: 'string',
-    //     aliases: { fr: 'interxmarc:008:3233' }
-    //   }
-    // }
+    const pseudoPropertyId = Object.keys(properties)[0]
     loadProperties(properties)
       .then((res) => {
         res.should.be.an.Object()
-        res[propertyId].should.be.an.Object()
-        res[propertyId].id.should.startWith('P')
+        res[pseudoPropertyId].should.be.an.Object()
+        res[pseudoPropertyId].id.should.startWith('P')
         done()
+      })
+      .catch(done)
+  })
+
+  it('should not create an property that already exists', done => {
+    const properties = parseProperties(robertFlemingNotice)
+    const pseudoPropertyId = Object.keys(properties)[0]
+    loadProperties(properties)
+      .then((res1) => {
+        const propertyId = res1[pseudoPropertyId].id
+        loadProperties(properties)
+          .then((res2) => {
+            res2[pseudoPropertyId].id.should.equal(propertyId)
+            done()
+          })
       })
       .catch(done)
   })
