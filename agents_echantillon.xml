@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <srw:records>
+    <srw:record>
+      <srw:recordSchema>InterXMarc_Complet</srw:recordSchema>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordData>
+
+<record Numero="14797579" format="InterXMarc_Complet" type="Authority">
+<leader>00615c0 ap22000272  45  <Pos Code="0004">00615</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="personne physique (PEP)">p</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF14797579X<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14797579</Pos>
+<Pos Code="13">X</Pos>
+</controlfield>
+<controlfield tag="008">970528101018ca   m          19211112  19761128             a 1   <Pos Code="0001">97</Pos>
+<Pos Code="0203">05</Pos>
+<Pos Code="0405">28</Pos>
+<Pos Code="0607">10</Pos>
+<Pos Code="0809">10</Pos>
+<Pos Code="1011">18</Pos>
+<Pos Code="1213" Sens="Canada">ca</Pos>
+<Pos Code="17" Sens="Masculin">m</Pos>
+<Pos Code="2831">1921</Pos>
+<Pos Code="3233">11</Pos>
+<Pos Code="3435">12</Pos>
+<Pos Code="3841">1976</Pos>
+<Pos Code="4243">11</Pos>
+<Pos Code="4445">28</Pos>
+<Pos Code="59" Sens="Responsabilité intellectuelle ou artistique">a</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="031" ind1=" " ind2=" ">
+	<subfield code="a">0000000073689743</subfield>
+	<subfield code="2" Sens="ISNI chargé à partir de VIAF">VIAF</subfield>
+	<subfield code="d">20130802<Pos Code="0003">2013</Pos>
+<Pos Code="0407" Sens="2 août">0802</Pos>
+</subfield>
+</datafield>
+<datafield tag="045" ind1=" " ind2=" ">
+	<subfield code="a" Sens="Auteur">a</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Fleming</subfield>
+	<subfield code="m">Robert</subfield>
+	<subfield code="d">1921-1976</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Pianiste et compositeur</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Six variations on a liturgical theme [Musique imprimée] : for string orchestra / Robert Fleming, [1946]</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2010-10-18</subfield>
+	<subfield code="a">Dictionnaire biographique des musiciens / Theodore Baker, Nicolas Slonimsky, 1995</subfield>
+	<subfield code="a">Encycl. of music in Canada</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100207930</subfield>
+	<subfield code="b">APP</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">102144780</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14061689</subfield>
+	<subfield code="d">20101018</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb147975794</Attr>
+<Attr Nom="NumSource">OPD 100207930</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NbAutoritesTUMLiees">28</Attr>
+<Attr Nom="DateCreation">28/05/1997</Attr>
+<Attr Nom="ResponsableCreation">MIGV3</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">03/08/2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV5</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">28/05/1997</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV3</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPC 102144780</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 14061689</Attr>
+</record>
+      </srw:recordData>
+      <srw:recordIdentifier>ark:/12148/cb147975794</srw:recordIdentifier>
+      <srw:recordPosition>1</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordSchema>InterXMarc_Complet</srw:recordSchema>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordData>
+
+<record Numero="12086504" format="InterXMarc_Complet" type="Authority">
+<leader>00598c1 ap2200027   45  <Pos Code="0004">00598</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="personne physique (PEP)">p</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF120865048<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">12086504</Pos>
+<Pos Code="13">8</Pos>
+</controlfield>
+<controlfield tag="008">880930040120frfrem          1954                           a 1   <Pos Code="0001">88</Pos>
+<Pos Code="0203">09</Pos>
+<Pos Code="0405">30</Pos>
+<Pos Code="0607">04</Pos>
+<Pos Code="0809">01</Pos>
+<Pos Code="1011">20</Pos>
+<Pos Code="1213" Sens="France">fr</Pos>
+<Pos Code="1416" Sens="français">fre</Pos>
+<Pos Code="17" Sens="Masculin">m</Pos>
+<Pos Code="2831">1954</Pos>
+<Pos Code="59" Sens="Responsabilité intellectuelle ou artistique">a</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="031" ind1=" " ind2=" ">
+	<subfield code="a">0000000114391194</subfield>
+	<subfield code="2" Sens="ISNI chargé à partir de la base ISNI">ISNI</subfield>
+	<subfield code="d">20131217<Pos Code="0003">2013</Pos>
+<Pos Code="0407" Sens="17 décembre">1217</Pos>
+</subfield>
+</datafield>
+<datafield tag="045" ind1=" " ind2=" ">
+	<subfield code="a" Sens="Auteur">a</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="w"> 0 2b.....</subfield>
+	<subfield code="a">Balac</subfield>
+	<subfield code="d">1954-....</subfield>
+</datafield>
+<datafield tag="301" ind1=" " ind2=" ">
+	<subfield code="3">12058246</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Lepennetier</subfield>
+	<subfield code="d">1954-....</subfield>
+</datafield>
+<datafield tag="331" ind1=" " ind2=" ">
+	<subfield code="3">12012817</subfield>
+	<subfield code="w">.0.2b.....</subfield>
+	<subfield code="a">Yann</subfield>
+	<subfield code="d">1954-....</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Scénariste de bandes dessinées</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Sambre / Yslaire, Balac, 1986-</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Guide de la bande dessinée / Philippe Bronson, 1986 : Yann (Lepennetier Yann)</subfield>
+	<subfield code="a">Dictionnaire de la bande dessinée / Henri Filippini, 1989 : Yann pseudonyme de Yan Lepennetier</subfield>
+</datafield>
+<datafield tag="907" ind1=" " ind2=" ">
+	<subfield code="o">GEA</subfield>
+	<subfield code="a">00205182X</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">004144489</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb120865049</Attr>
+<Attr Nom="NumSource">GEA 00205182X</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NbAutoritesTICLiees">1</Attr>
+<Attr Nom="NbAutoritesTUMLiees">0</Attr>
+<Attr Nom="NumAutoriteLiee">1205824612012817</Attr>
+<Attr Nom="DateCreation">30/09/1988</Attr>
+<Attr Nom="ResponsableCreation">MIGV1</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">17/12/2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV5</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">20/07/1993</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV1</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPL 004144489</Attr>
+</record>
+      </srw:recordData>
+      <srw:recordIdentifier>ark:/12148/cb120865049</srw:recordIdentifier>
+      <srw:recordPosition>2</srw:recordPosition>
+    </srw:record>
+  </srw:records>
