@@ -3,7 +3,9 @@ const robertFlemingNotice = require('./fixtures/RobertFleming_BnF_14797579.json'
 const parseProperties = require('../lib/transform/parse_properties')
 const loadProperties = require('../lib/load/load_properties')
 
-describe('load properties on wikibase', () => {
+describe('load properties on wikibase', function () {
+  this.timeout(20000)
+
   it('should return an object of Wikibase properties', done => {
     const propertyId = 'interxmarc:008:3233'
     const properties = parseProperties(robertFlemingNotice)

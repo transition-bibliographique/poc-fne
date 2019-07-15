@@ -5,7 +5,9 @@ const parseItem = require('../lib/transform/parse_items')
 const loadProperties = require('../lib/load/load_properties')
 const loadItem = require('../lib/load/load_item')
 
-describe('load items on wikibase', () => {
+describe('load items on wikibase', function () {
+  this.timeout(20000)
+
   it('should return an item with a wb id and wb claims', done => {
     const itemPseudoId = '0  b.Fleming.Robert.1921-1976'
     const properties = parseProperties(robertFlemingNotice)
