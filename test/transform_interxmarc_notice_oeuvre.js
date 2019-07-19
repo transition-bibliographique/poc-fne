@@ -1,7 +1,7 @@
 require('should')
 const lesReveriesDuPromeneur = require('./fixtures/LesReveriesDuPromeneur_BnF_11935154.json')
 const parseProperties = require('../lib/transform/parse_properties')
-const parseItems = require('../lib/transform/parse_items')
+const parseNotice = require('../lib/transform/parse_notice')
 
 describe('create pseudo properties from an interxmarc work', () => {
   describe('transform datafield', () => {
@@ -43,7 +43,8 @@ describe('create a pseudo item from an interxmarc work', () => {
   describe('transform datafield', () => {
     it('should return a pseudo item id', done => {
       const itemId = '.0..b.fre..Les rêveries du promeneur solitaire'
-      const item = parseItems(lesReveriesDuPromeneur)
+      const items = parseNotice(lesReveriesDuPromeneur)
+      const item = items[0]
       item.should.be.an.Object()
       item.pseudoId.should.equal(itemId)
       item.labels.fr.should.equal(itemId)
@@ -53,7 +54,8 @@ describe('create a pseudo item from an interxmarc work', () => {
   describe('transform datacontrol', () => {
     it('should return pseudo claims', done => {
       const itemPropertyPseudoId = 'interxmarc:001:0001'
-      const item = parseItems(lesReveriesDuPromeneur)
+      const items = parseNotice(lesReveriesDuPromeneur)
+      const item = items[0]
       item.claims.should.be.an.Object()
       item.claims[itemPropertyPseudoId].should.be.an.Array()
       item.claims[itemPropertyPseudoId][0].should.equal('FR')
@@ -63,7 +65,8 @@ describe('create a pseudo item from an interxmarc work', () => {
   describe('transform leader', () => {
     it('should return pseudo claims', done => {
       const itemPropertyPseudoId = 'interxmarc:000:0004'
-      const item = parseItems(lesReveriesDuPromeneur)
+      const items = parseNotice(lesReveriesDuPromeneur)
+      const item = items[0]
       item.claims.should.be.an.Object()
       item.claims[itemPropertyPseudoId].should.be.an.Array()
       item.claims[itemPropertyPseudoId][0].should.equal('00469')
