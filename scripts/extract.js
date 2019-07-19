@@ -12,7 +12,7 @@ const filePath = path.join(__dirname, '..', fileName)
 const data = getEchantillonData(filePath)
 const fields = parseRecord(data)
 const sanitizeFields = sanitizeData(fields)
-const json = JSON.stringify(sanitizeFields)
+const json = JSON.stringify(sanitizeFields, null, 2)
 
 const jsonExportPath = filePath.split('.')[0] + '.json'
 fs.writeFileSync(jsonExportPath, json)
