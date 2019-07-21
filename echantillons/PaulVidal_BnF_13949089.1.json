@@ -1,0 +1,712 @@
+{
+  "Numero": "13949089",
+  "format": "InterXMarc_Complet",
+  "type": "Authority",
+  "leader": {
+    "Pos": [
+      {
+        "Code": "0004",
+        "$t": "01438"
+      },
+      {
+        "Code": "05",
+        "Sens": "notice modifiée",
+        "$t": "c"
+      },
+      {
+        "Code": "06",
+        "Sens": "notice validée par les services d'autorité",
+        "$t": "0"
+      },
+      {
+        "Code": "08",
+        "Sens": "notice d'autorité",
+        "$t": "a"
+      },
+      {
+        "Code": "09",
+        "Sens": "personne physique (PEP)",
+        "$t": "p"
+      },
+      {
+        "Code": "10",
+        "$t": "2"
+      },
+      {
+        "Code": "11",
+        "$t": "2"
+      },
+      {
+        "Code": "1216",
+        "$t": "00027"
+      },
+      {
+        "Code": "20",
+        "$t": "4"
+      },
+      {
+        "Code": "21",
+        "$t": "5"
+      }
+    ]
+  },
+  "controlfield": [
+    {
+      "tag": "001",
+      "Pos": [
+        {
+          "Code": "0001",
+          "$t": "FR"
+        },
+        {
+          "Code": "0204",
+          "$t": "BNF"
+        },
+        {
+          "Code": "0512",
+          "$t": "13949089"
+        },
+        {
+          "Code": "13",
+          "$t": "3"
+        }
+      ]
+    },
+    {
+      "tag": "008",
+      "Pos": [
+        {
+          "Code": "0001",
+          "$t": "92"
+        },
+        {
+          "Code": "0203",
+          "$t": "09"
+        },
+        {
+          "Code": "0405",
+          "$t": "14"
+        },
+        {
+          "Code": "0607",
+          "$t": "18"
+        },
+        {
+          "Code": "0809",
+          "$t": "03"
+        },
+        {
+          "Code": "1011",
+          "$t": "07"
+        },
+        {
+          "Code": "1213",
+          "Sens": "France",
+          "$t": "fr"
+        },
+        {
+          "Code": "17",
+          "Sens": "Masculin",
+          "$t": "m"
+        },
+        {
+          "Code": "2831",
+          "$t": "1863"
+        },
+        {
+          "Code": "3233",
+          "$t": "06"
+        },
+        {
+          "Code": "3435",
+          "$t": "16"
+        },
+        {
+          "Code": "3841",
+          "$t": "1931"
+        },
+        {
+          "Code": "4243",
+          "$t": "04"
+        },
+        {
+          "Code": "4445",
+          "$t": "09"
+        },
+        {
+          "Code": "59",
+          "Sens": "Responsabilité intellectuelle ou artistique",
+          "$t": "a"
+        },
+        {
+          "Code": "61",
+          "Sens": "La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l'accès matière RAMEAU",
+          "$t": "0"
+        },
+        {
+          "Code": "62",
+          "Sens": "La vedette ne peut s'employer qu'en tête de vedette",
+          "$t": "1"
+        },
+        {
+          "Code": "63",
+          "Sens": "La vedette n'admet pas de subdivision géographique",
+          "$t": "0"
+        }
+      ]
+    }
+  ],
+  "datafield": [
+    {
+      "tag": "031",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "a",
+          "$t": "0000000081333229"
+        },
+        {
+          "code": "2",
+          "Sens": "ISNI chargé à partir de VIAF",
+          "$t": "VIAF"
+        },
+        {
+          "code": "d",
+          "Pos": [
+            {
+              "Code": "0003",
+              "$t": "2013"
+            },
+            {
+              "Code": "0407",
+              "Sens": "31 juillet",
+              "$t": "0731"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "045",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "a",
+          "Sens": "Auteur",
+          "$t": "a"
+        },
+        {
+          "code": "a",
+          "Sens": "Interprète",
+          "$t": "i"
+        }
+      ]
+    },
+    {
+      "tag": "100",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "w",
+          "$t": "0  b"
+        },
+        {
+          "code": "a",
+          "$t": "Vidal"
+        },
+        {
+          "code": "m",
+          "$t": "Paul"
+        },
+        {
+          "code": "d",
+          "$t": "1863-1931"
+        }
+      ]
+    },
+    {
+      "tag": "511",
+      "ind1": "2",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "3",
+          "$t": "13905462"
+        },
+        {
+          "code": "w",
+          "$t": "20  b"
+        },
+        {
+          "code": "a",
+          "$t": "Théâtre national de l'Opéra-comique"
+        },
+        {
+          "code": "c",
+          "$t": "Paris"
+        },
+        {
+          "code": "b",
+          "$t": "Orchestre"
+        },
+        {
+          "code": "s",
+          "$t": "1914-1919"
+        }
+      ]
+    },
+    {
+      "tag": "600",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "a",
+          "$t": "Chef d'orchestre, professeur et compositeur"
+        },
+        {
+          "code": "a",
+          "$t": "Prénoms complets : Paul, Antonin"
+        }
+      ]
+    },
+    {
+      "tag": "603",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "a",
+          "$t": "Toulouse"
+        },
+        {
+          "code": "b",
+          "$t": "Paris"
+        }
+      ]
+    },
+    {
+      "tag": "610",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "a",
+          "$t": "La folie de Pierrot : mimodrame / Arthur Byl et Marsolleau ; musique de Paul Vidal, 1995 [document électronique : reprod. de l'éd. de 1900]"
+        },
+        {
+          "code": "a",
+          "$t": "Printemps nouveau [Enregistrement sonore]. 1 min 49 s / Paul Antonin Vidal, comp. ; Suzanne Adams, S ; Charles Adams Prince, p. in The 1903 Colombia Grand Opera séries [Enregistrement sonore] : presenting Suzanne Adams, Giuseppe Capanari, Edouard de Reske...[etc]. Sony classical MHZK62334"
+        }
+      ]
+    },
+    {
+      "tag": "610",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "a",
+          "$t": "Dictionnaire biographique des musiciens / Theodore Baker, Nicolas Slonimsky, 1995 [Vidal, Paul (Antonin)]"
+        },
+        {
+          "code": "a",
+          "$t": "Grove Music Online"
+        },
+        {
+          "code": "u",
+          "$t": "http://www.grovemusic.com"
+        },
+        {
+          "code": "d",
+          "$t": "2006-07-25"
+        }
+      ]
+    },
+    {
+      "tag": "610",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": {
+        "code": "a",
+        "$t": "BN Cat. gén."
+      }
+    },
+    {
+      "tag": "907",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "GEA"
+        },
+        {
+          "code": "a",
+          "$t": "007123023"
+        }
+      ]
+    },
+    {
+      "tag": "917",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPC"
+        },
+        {
+          "code": "a",
+          "$t": "100800930"
+        }
+      ]
+    },
+    {
+      "tag": "917",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPL"
+        },
+        {
+          "code": "a",
+          "$t": "011417917"
+        }
+      ]
+    },
+    {
+      "tag": "917",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPD"
+        },
+        {
+          "code": "a",
+          "$t": "100141590"
+        },
+        {
+          "code": "b",
+          "$t": "APP"
+        }
+      ]
+    },
+    {
+      "tag": "917",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPD"
+        },
+        {
+          "code": "a",
+          "$t": "100269830"
+        },
+        {
+          "code": "b",
+          "$t": "AMA"
+        }
+      ]
+    },
+    {
+      "tag": "918",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPL"
+        },
+        {
+          "code": "a",
+          "$t": "00027679"
+        },
+        {
+          "code": "b",
+          "$t": "HS9301"
+        }
+      ]
+    },
+    {
+      "tag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "12463201"
+        },
+        {
+          "code": "d",
+          "$t": "20060725"
+        }
+      ]
+    },
+    {
+      "tag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "10516776"
+        },
+        {
+          "code": "d",
+          "$t": "20060725"
+        }
+      ]
+    },
+    {
+      "tag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14791436"
+        },
+        {
+          "code": "d",
+          "$t": "20060725"
+        }
+      ]
+    },
+    {
+      "tag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14703751"
+        },
+        {
+          "code": "d",
+          "$t": "20060725"
+        }
+      ]
+    },
+    {
+      "tag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14940625"
+        },
+        {
+          "code": "d",
+          "$t": "20090416"
+        }
+      ]
+    },
+    {
+      "tag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14779517"
+        },
+        {
+          "code": "d",
+          "$t": "20090416"
+        }
+      ]
+    },
+    {
+      "tag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14996855"
+        },
+        {
+          "code": "d",
+          "$t": "20090416"
+        }
+      ]
+    },
+    {
+      "tag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "subfield": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "17084862"
+        },
+        {
+          "code": "d",
+          "$t": "20180307"
+        }
+      ]
+    }
+  ],
+  "Attr": [
+    {
+      "Nom": "IDPerenne",
+      "$t": "ark:/12148/cb13949089q"
+    },
+    {
+      "Nom": "NumSource",
+      "$t": "GEA 007123023"
+    },
+    {
+      "Nom": "Source",
+      "Sens": "BnF catalogue général (depuis 1999)",
+      "$t": "A"
+    },
+    {
+      "Nom": "NbAutoritesTUMLiees",
+      "$t": "42"
+    },
+    {
+      "Nom": "NumAutoriteLiee",
+      "$t": "13905462"
+    },
+    {
+      "Nom": "DateCreation",
+      "$t": "14/09/1992"
+    },
+    {
+      "Nom": "ResponsableCreation",
+      "$t": "MIGV2"
+    },
+    {
+      "Nom": "StructCreation",
+      "$t": "1"
+    },
+    {
+      "Nom": "DateDerniereValidation",
+      "$t": "07/03/2018"
+    },
+    {
+      "Nom": "ResponsableDerniereValidation",
+      "$t": "ETIENNE VALERE"
+    },
+    {
+      "Nom": "StructPremiereValidation",
+      "$t": "1"
+    },
+    {
+      "Nom": "DatePremiereValidation",
+      "$t": "14/09/1992"
+    },
+    {
+      "Nom": "ResponsablePremiereValidation",
+      "$t": "MIGV2"
+    },
+    {
+      "Nom": "StructDerniereValidation",
+      "$t": "37"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "1",
+      "$t": "OPC 100800930"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "2",
+      "$t": "OPL 011417917"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "3",
+      "$t": "OPD 100141590"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "4",
+      "$t": "OPD 100269830"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "5",
+      "$t": "OPP 12463201"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "6",
+      "$t": "OPP 10516776"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "7",
+      "$t": "OPP 14791436"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "8",
+      "$t": "OPP 14703751"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "9",
+      "$t": "OPP 14940625"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "10",
+      "$t": "OPP 14779517"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "11",
+      "$t": "OPP 14996855"
+    },
+    {
+      "Nom": "NumSource",
+      "Rep": "12",
+      "$t": "OPP 17084862"
+    }
+  ]
+}

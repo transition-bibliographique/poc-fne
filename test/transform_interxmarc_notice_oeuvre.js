@@ -1,5 +1,5 @@
 require('should')
-const lesReveriesDuPromeneur = require('./fixtures/LesReveriesDuPromeneur_BnF_11935154.json')
+const lesReveriesDuPromeneur = require('../echantillons/LesReveriesDuPromeneur_BnF_11935154.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
