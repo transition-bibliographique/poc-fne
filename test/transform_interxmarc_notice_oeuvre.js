@@ -87,7 +87,7 @@ describe('create a pseudo item from an interxmarc work', () => {
       const authorPseudoId = '11922879..0..b......Rousseau.Jean-Jacques.1712-1778'
       authorItem.pseudoId.should.equal(authorPseudoId)
       relations[0].subject.should.equal(workItem.pseudoId)
-      relations[0].property.should.equal('author')
+      relations[0].property.should.equal('interxmarc:s:100')
       relations[0].object.should.equal(authorPseudoId)
       done()
     })

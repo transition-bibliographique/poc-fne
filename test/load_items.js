@@ -25,4 +25,28 @@ describe('load items on wikibase', function () {
       })
       .catch(done)
   })
+
+  it('should return a list of items with relations', done => {
+    const relationProperty = 'interxmarc:s:100'
+    const properties = parseProperties(lesReveriesDuPromeneur)
+    const { items, relations } = parseNotice(lesReveriesDuPromeneur)
+
+    loadProperties(properties)
+      .then((wbProps) => {
+        return loadItems(items, relations, wbProps)
+          .then((res) => {
+            const entities = Object.values(res.entities)
+            const workItem = entities.find(entity => {
+              return Object.values(entity.claims).find(claimProperyTypeIsWikibaseItem)
+            })
+            workItem.should.be.an.Object( )
+            done()
+          })
+      })
+      .catch(done)
+  })
 })
+
+const claimProperyTypeIsWikibaseItem = propertyClaims => {
+  return propertyClaims[0].mainsnak.datatype === 'wikibase-item'
+}

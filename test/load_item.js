@@ -1,7 +1,7 @@
 require('should')
 const robertFlemingNotice = require('../echantillons/RobertFleming_BnF_14797579.json')
 const parseProperties = require('../lib/transform/parse_properties')
-const parseItem = require('../lib/transform/parse_items')
+const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
 const loadItem = require('../lib/load/load_item')
 
@@ -11,7 +11,8 @@ describe('load item on wikibase', function () {
   it('should return an item with a wb id and wb claims', done => {
     const itemPseudoId = '0  b.Fleming.Robert.1921-1976'
     const properties = parseProperties(robertFlemingNotice)
-    const item = parseItem(robertFlemingNotice)
+    const { items } = parseNotice(robertFlemingNotice)
+    const item = items[0]
 
     loadProperties(properties)
       .then((wbProps) => {
