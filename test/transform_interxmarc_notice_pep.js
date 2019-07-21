@@ -1,7 +1,7 @@
 require('should')
 const robertFlemingNotice = require('./fixtures/RobertFleming_BnF_14797579.json')
 const parseProperties = require('../lib/transform/parse_properties')
-const parseItems = require('../lib/transform/parse_items')
+const parseNotice = require('../lib/transform/parse_notice')
 
 describe('create pseudo properties from an interxmarc pep', function () {
   this.timeout(20000)
@@ -45,7 +45,8 @@ describe('create a pseudo item from an interxmarc pep', () => {
   describe('transform datafield', () => {
     it('should return a pseudo item id', done => {
       const itemPseudoId = '0  b.Fleming.Robert.1921-1976'
-      const item = parseItems(robertFlemingNotice)
+      const { items } = parseNotice(robertFlemingNotice)
+      const item = items[0]
       item.should.be.an.Object()
       item.pseudoId.should.equal(itemPseudoId)
       item.labels.en.should.equal(itemPseudoId)
@@ -56,7 +57,8 @@ describe('create a pseudo item from an interxmarc pep', () => {
   describe('transform datacontrol', () => {
     it('should return pseudo claims', done => {
       const itemPropertyPseudoId = 'interxmarc:001:0001'
-      const item = parseItems(robertFlemingNotice)
+      const { items } = parseNotice(robertFlemingNotice)
+      const item = items[0]
       item.claims.should.be.an.Object()
       item.claims[itemPropertyPseudoId].should.be.an.Array()
       item.claims[itemPropertyPseudoId][0].should.equal('FR')
@@ -66,7 +68,8 @@ describe('create a pseudo item from an interxmarc pep', () => {
   describe('transform leader', () => {
     it('should return pseudo claims', done => {
       const itemPropertyPseudoId = 'interxmarc:000:0004'
-      const item = parseItems(robertFlemingNotice)
+      const { items } = parseNotice(robertFlemingNotice)
+      const item = items[0]
       item.claims.should.be.an.Object()
       item.claims[itemPropertyPseudoId].should.be.an.Array()
       item.claims[itemPropertyPseudoId][0].should.equal('00615')
