@@ -48,6 +48,12 @@ describe('create a pseudo item from an interxmarc work', () => {
       item.should.be.an.Object()
       item.pseudoId.should.equal(itemId)
       item.labels.fr.should.equal(itemId)
+      Object.keys(item.claims).forEach(pseudoPropertyId => {
+        const propClaims = item.claims[pseudoPropertyId]
+        propClaims.forEach(value => {
+          should(value).be.ok()
+        })
+      })
       done()
     })
   })
