@@ -240,11 +240,13 @@
       "subfields": [
         {
           "code": "a",
-          "Pos": {
-            "Code": "0002",
-            "Sens": "Littératures",
-            "$t": "800"
-          }
+          "Pos": [
+            {
+              "Code": "0002",
+              "Sens": "Littératures",
+              "$t": "800"
+            }
+          ]
         }
       ]
     },
