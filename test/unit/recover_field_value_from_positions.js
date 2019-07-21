@@ -1,7 +1,6 @@
 require('should')
 const recoverFieldValueFromPositions = require('../../lib/recover_field_value_from_positions')
 const lesReveriesDuPromeneur = require('../../echantillons/LesReveriesDuPromeneur_BnF_11935154.json')
-
 const { Pos } = lesReveriesDuPromeneur.controlfield[1]
 
 it('should recover field value from positions', done => {
