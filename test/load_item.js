@@ -1,5 +1,5 @@
 require('should')
-const robertFlemingNotice = require('./fixtures/RobertFleming_BnF_14797579.json')
+const robertFlemingNotice = require('../echantillons/RobertFleming_BnF_14797579.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseItem = require('../lib/transform/parse_items')
 const loadProperties = require('../lib/load/load_properties')
