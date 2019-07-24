@@ -39,6 +39,15 @@ describe('create pseudo properties from an interxmarc pep', function () {
       done()
     })
   })
+  it('should return an object of modelized pseudo properties', done => {
+    const propertyId = 'interxmarc:p:031'
+    const properties = parseProperties(robertFlemingNotice)
+    const propertiesList = Object.keys(properties)
+    propertiesList.includes(propertyId).should.be.true()
+    // const property = propertiesList.find(prop => prop.pseudoId === propertyId)
+    // property.datatype.should.equal('external-id')
+    done()
+  })
 })
 
 describe('create a pseudo item from an interxmarc pep', () => {
