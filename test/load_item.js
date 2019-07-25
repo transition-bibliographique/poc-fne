@@ -3,6 +3,7 @@ const robertFlemingNotice = require('../echantillons/RobertFleming_BnF_14797579.
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
+const loadHardCodedProperties = require('../lib/load/load_hard_coded_properties')
 const loadItem = require('../lib/load/load_item')
 
 describe('load item on wikibase', function () {
@@ -14,9 +15,13 @@ describe('load item on wikibase', function () {
     const { items } = parseNotice(robertFlemingNotice)
     const item = items[0]
 
-    loadProperties(properties)
+    Promise.all([
+      loadProperties(properties),
+      loadHardCodedProperties()
+    ])
+      .then(([a, b]) => Object.assign({}, a, b))
       .then((wbProps) => {
-        loadItem(item, wbProps)
+        return loadItem(item, wbProps)
           .then((res) => {
             res.should.be.an.Object()
             res.pseudoId.should.equal(itemPseudoId)
@@ -27,6 +32,6 @@ describe('load item on wikibase', function () {
             done()
           })
       })
-      .catch(done)
+    .catch(done)
   })
 })

@@ -83,7 +83,7 @@ describe('create a pseudo item from an interxmarc pep', () => {
       claim.references.should.be.an.Array()
       const reference = claim.references[0]
       reference.should.be.an.Object()
-      reference['date de consultation'].should.equal('2013-08-02')
+      reference['date de consultation'][0].should.equal('2013-08-02')
       done()
     })
   })
