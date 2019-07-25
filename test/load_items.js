@@ -35,10 +35,10 @@ describe('load items on wikibase', function () {
       .then((wbProps) => {
         return loadItems(items, relations, wbProps)
           .then((res) => {
-            const workId = res.relations[0].claim.id.split('$')[0]
-            const authorId = res.relations[0].claim.mainsnak.datavalue.value.id
-            res.entities[workId].labels.en.value.should.equal(relations[0].subject)
-            res.entities[authorId].labels.en.value.should.equal(relations[0].object)
+            const oeuvreId = res.relations[0].claim.id.split('$')[0]
+            const pepId = res.relations[0].claim.mainsnak.datavalue.value.id
+            res.entities[oeuvreId].labels.en.value.should.equal(relations[0].subject)
+            res.entities[pepId].labels.en.value.should.equal(relations[0].object)
             done()
           })
       })
