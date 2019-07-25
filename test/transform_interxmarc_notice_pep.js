@@ -6,21 +6,6 @@ const parseNotice = require('../lib/transform/parse_notice')
 describe('create pseudo properties from an interxmarc pep', function () {
   this.timeout(20000)
 
-  describe('transform datafield', () => {
-    it('should return an object of pseudo properties', done => {
-      const propertyId = 'interxmarc:031:a:0'
-      const properties = parseProperties(robertFlemingNotice)
-      properties.should.be.an.Object()
-      const propertiesList = Object.keys(properties)
-      propertiesList.should.be.an.Array()
-      propertiesList.includes(propertyId).should.be.true()
-      properties[propertyId].pseudoId.should.equal(propertyId)
-      properties[propertyId].labels.en.should.equal(propertyId)
-      properties[propertyId].labels.fr.should.equal(propertyId)
-      properties[propertyId].datatype.should.equal('string')
-      done()
-    })
-  })
   describe('transform controlfield', () => {
     it('should return an object of pseudo properties', done => {
       const propertyId = 'interxmarc:001:0001'

@@ -3,7 +3,7 @@ const lesReveriesDuPromeneur = require('../echantillons/LesReveriesDuPromeneur_B
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
-describe('create pseudo properties from an interxmarc work', () => {
+describe('create pseudo properties from an interxmarc oeuvre', () => {
   describe('transform datafield', () => {
     it('should return an object of pseudo properties', done => {
       const propertyId = 'interxmarc:600:a:0'
@@ -39,7 +39,7 @@ describe('create pseudo properties from an interxmarc work', () => {
   })
 })
 
-describe('create a pseudo item from an interxmarc work', () => {
+describe('create a pseudo item from an interxmarc oeuvre', () => {
   describe('transform datafield', () => {
     it('should return a pseudo item id', done => {
       const itemId = '.0..b.fre..Les rêveries du promeneur solitaire'
@@ -80,15 +80,15 @@ describe('create a pseudo item from an interxmarc work', () => {
     })
   })
 
-  describe('author relation', () => {
-    it('should return an author item', done => {
+  describe('pep relation', () => {
+    it('should return a pep item', done => {
       const { items, relations } = parseNotice(lesReveriesDuPromeneur)
-      const [ workItem, authorItem ] = items
-      const authorPseudoId = '11922879..0..b......Rousseau.Jean-Jacques.1712-1778'
-      authorItem.pseudoId.should.equal(authorPseudoId)
-      relations[0].subject.should.equal(workItem.pseudoId)
+      const [ oeuvreItem, pepItem ] = items
+      const pepPseudoId = '11922879..0..b......Rousseau.Jean-Jacques.1712-1778'
+      pepItem.pseudoId.should.equal(pepPseudoId)
+      relations[0].subject.should.equal(oeuvreItem.pseudoId)
       relations[0].property.should.equal('interxmarc:s:100')
-      relations[0].object.should.equal(authorPseudoId)
+      relations[0].object.should.equal(pepPseudoId)
       done()
     })
   })
