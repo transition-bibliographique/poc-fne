@@ -75,10 +75,15 @@ describe('create a pseudo item from an interxmarc pep', () => {
     it('should add modelized claim', done => {
       const { items } = parseNotice(robertFlemingNotice)
       const [ oeuvreItem ] = items
-      oeuvreItem.claims['interxmarc:s:031'].should.be.an.Array()
-      const claim = oeuvreItem.claims['interxmarc:s:031'][0]
+      const pseudoPropertyId = 'interxmarc:p:031'
+      oeuvreItem.claims[pseudoPropertyId].should.be.an.Array()
+      const claim = oeuvreItem.claims[pseudoPropertyId][0]
       claim.should.be.an.Object()
-      claim.value.should.be.a.String()
+      claim.value.should.be.equal('0000000073689743')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.be.an.Object()
+      reference['date de consultation'].should.equal('2013-08-02')
       done()
     })
   })
