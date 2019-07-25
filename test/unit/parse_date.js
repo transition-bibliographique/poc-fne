@@ -1,14 +1,14 @@
 require('should')
-const createDate = require('../lib/transform/create_date')
+const parseDate = require('../lib/transform/parse_date')
 
-describe('create_date', () => {
+describe('parse_date', () => {
   describe('when simple subfield date value is passed', () => {
     it('should return date string compatible with loader', done => {
       const subfield = {
         code: 'd',
         '$t': '2010-10-18'
       }
-      const date = createDate(subfield)
+      const date = parseDate(subfield)
       date.should.be.an.String()
       date.should.equal('2010-10-18')
       done()
@@ -19,7 +19,7 @@ describe('create_date', () => {
         code: 'd',
         '$t': '1921-1976'
       }
-      const date = createDate(subfield)
+      const date = parseDate(subfield)
       date.should.be.an.String()
       date.should.equal('1921-1976')
       done()
@@ -34,7 +34,7 @@ describe('create_date', () => {
           { Code: '0407', '$t': '0802' }
         ]
       }
-      const date = createDate(subfield)
+      const date = parseDate(subfield)
       date.should.be.an.String()
       date.should.equal('2013-08-02')
       done()
