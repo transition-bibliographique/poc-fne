@@ -70,4 +70,16 @@ describe('create a pseudo item from an interxmarc pep', () => {
       done()
     })
   })
+
+  describe('add modelized claims', () => {
+    it('should add modelized claim', done => {
+      const { items } = parseNotice(robertFlemingNotice)
+      const [ oeuvreItem ] = items
+      oeuvreItem.claims['interxmarc:s:031'].should.be.an.Array()
+      const claim = oeuvreItem.claims['interxmarc:s:031'][0]
+      claim.should.be.an.Object()
+      claim.value.should.be.a.String()
+      done()
+    })
+  })
 })
