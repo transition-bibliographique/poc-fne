@@ -19,9 +19,22 @@ const getNoticeJson = (noticePath) => {
   }
 }
 
+const getIdsMap = (responses) => {
+  return responses.reduce((obj, res) => {
+    Object.keys(res.entities).forEach(entityId => {
+      const pseudoId = res.entities[entityId].labels.en.value
+      obj[entityId] = pseudoId
+    })
+    return obj
+  }, {})
+}
+
 Promise.all(noticesPaths.map(getNoticeJson))
 .then((notices) => {
   return Promise.all(notices.map(transformAndLoadNotice))
 })
-.then((res) => { console.log('loaded', res) })
+.then((responses) => {
+  const idsMap = getIdsMap(responses)
+  console.log('loaded', JSON.stringify(idsMap, null, 2))
+})
 .catch(console.error)
