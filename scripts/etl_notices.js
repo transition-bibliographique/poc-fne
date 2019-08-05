@@ -7,11 +7,11 @@ const noticesPaths = process.argv.slice(2)
   .filter(noticePath => noticePath.match(/\.txt$/))
   .map(noticePath => path.resolve(noticePath))
 
-const getNoticeJson = (noticePath) => {
+const getAndExtractNotice = (noticePath) => {
   const jsonNoticePath = noticePath.replace('.txt', '.json')
   try {
     const json = require(jsonNoticePath)
-    console.log('already exist', noticePath)
+    console.log('already exist', jsonNoticePath)
     return Promise.resolve(json)
   } catch (err) {
     console.log('creating', noticePath)
@@ -29,7 +29,7 @@ const getIdsMap = (responses) => {
   }, {})
 }
 
-Promise.all(noticesPaths.map(getNoticeJson))
+Promise.all(noticesPaths.map(getAndExtractNotice))
 .then((notices) => {
   return Promise.all(notices.map(transformAndLoadNotice))
 })
