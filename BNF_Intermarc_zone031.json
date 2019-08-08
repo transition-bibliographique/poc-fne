@@ -1,0 +1,64 @@
+{
+  "schema": "INTERMARC",
+  "zone": "031",
+  "properties": [ "<whatever list of properties>" ],
+  "items": [
+    {
+      "id": "Q1",
+      "claims": {
+        "P25": [
+          {
+            "value": "<copie intégrale de la zone 031>",
+            "qualifiers": {
+              "P26": [ "valeur de $2" ],
+              "P27": [ "valeur de $a" ],
+			  "P28": [ "valeur de $d" ],
+              "P29": [ "valeur de $e" ],
+			  "P30": [ "valeur de $z" ]            },
+            "references":{}
+          }
+        ]
+      }
+    },
+    {
+      "id": "Q2",
+      "claims": {
+        "P26": [
+          {
+            "value": "<valeur de $2>",
+            "qualifiers": {},
+            "references": {}
+          }
+        ]
+		"P27": [
+          {
+            "value": "<valeur de $a>",
+            "qualifiers": {},
+            "references": {}
+          }
+        ]
+		"P28": [
+          {
+            "value": "<valeur de $d>",
+            "qualifiers": {},
+            "references": {}
+          }
+        ]
+		"P29": [
+          {
+            "value": "<valeur de $e>",
+            "qualifiers": {},
+            "references": {}
+          }
+        ]
+		"P30": [
+          {
+            "value": "<valeur de $z>",
+            "qualifiers": {},
+            "references": {}
+          }
+        ]
+      }
+    }
+  ]
+}
