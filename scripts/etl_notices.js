@@ -2,20 +2,35 @@
 const path = require('path')
 const extract = require('../lib/extract/extract')
 const transformAndLoadNotice = require('../lib/transform_and_load_notice')
+const { readFile } = require('../lib/fs')
+const { flatten } = require('lodash')
 
-const noticesPaths = process.argv.slice(2)
-  .filter(noticePath => noticePath.match(/\.txt$/))
-  .map(noticePath => path.resolve(noticePath))
+const noticesDumpPaths = process.argv.slice(2)
+  .filter(noticesDumpPath => noticesDumpPath.match(/\.xml$/))
+  .map(noticesDumpPath => path.resolve(noticesDumpPath))
 
-const getAndExtractNotice = (noticePath) => {
-  const jsonNoticePath = noticePath.replace('.txt', '.json')
-  try {
-    const json = require(jsonNoticePath)
-    console.log('already exist', jsonNoticePath)
-    return Promise.resolve(json)
-  } catch (err) {
-    console.log('creating', noticePath)
-    return extract(noticePath)
+const getAndExtractNotices = (noticesDumpPath) => {
+  const jsonNoticePath = noticesDumpPath.replace(/\.xml/, '.ndjson')
+  return readFile(jsonNoticePath)
+    .then(parseRecords(jsonNoticePath))
+    .catch(extractIfMissing(noticesDumpPath, jsonNoticePath))
+}
+
+const parseRecords = (jsonNoticePath) => (buf) => {
+  console.log('already exist', jsonNoticePath)
+  const ndjson = buf.toString()
+  return ndjson
+    .split('\n')
+    .slice(0, 1)
+    .map(JSON.parse)
+}
+
+const extractIfMissing = (noticesDumpPath, jsonNoticePath) => (err) => {
+  if (err.code !== 'ENOENT') {
+    throw err
+  } else {
+    console.log('creating', jsonNoticePath)
+    return extract(noticesDumpPath)
   }
 }
 
@@ -29,7 +44,8 @@ const getIdsMap = (responses) => {
   }, {})
 }
 
-Promise.all(noticesPaths.map(getAndExtractNotice))
+Promise.all(noticesDumpPaths.map(getAndExtractNotices))
+.then(flatten)
 .then((notices) => {
   return Promise.all(notices.map(transformAndLoadNotice))
 })
