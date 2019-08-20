@@ -1,279 +1,223 @@
 {
-  "schema": "pivot",
-  "properties": [
-    {
-      "id": "P1",
-      "datatype": "string",
-      "labels": {
-        "fr": "données source de la zone"
-      },
-    },
-    {
-      "id": "P2",
-      "datatype": "string",
-      "labels": {
-        "fr": "identifiant de la zone"
-      },
-    }
-	{
-      "id": "P3",
-      "datatype": "external-id",
-      "labels": {
-        "fr": "URL pérenne"
-      },
-    },
-    {
-      "id": "P4",
-      "datatype": "string"
-      "labels": {
-        "fr": "Type d'entité"
-      },
-    },
-	{
-      "id": "P5",
-      "datatype": "external-id"
-      "labels": {
-        "fr": "Identifiant ISNI"
-      },
-    },
-	{
-      "id": "P6",
-      "datatype": "string"
-      "labels": {
-        "fr": "Source d'import"
-      },
-    },
-	{
-      "id": "P7",
-      "datatype": "string",
-      "labels": {
-        "fr": "Nom"
-      },
-    },
-	{
-      "id": "P8",
-      "datatype": "string",
-      "labels": {
-        "fr": "Prénom"
-      },
-    },
-	{
-      "id": "P9",
-      "datatype": "string",
-      "labels": {
-        "fr": "Date de naissance"
-      },
-    },
-	{
-      "id": "P10",
-      "datatype": "string",
-      "labels": {
-        "fr": "Date de décès"
-      },
-    },
-	{
-      "id": "P11",
-      "datatype": "string",
-      "labels": {
-        "fr": "Activité"
-      },
-    },
-	{
-      "id": "P12",
-      "datatype": "string",
-      "labels": {
-        "fr": "Titre de l'oeuvre"
-      },
-    },
-	{
-      "id": "P13",
-      "datatype": "string",
-      "labels": {
-        "fr": "Langue de l'oeuvre"
-      },
-    },
+	"schema": "pivot",
+	"properties": [{
+			"id": "P1",
+			"datatype": "string",
+			"labels": {
+				"fr": "données source de la zone"
+			}
+		},
+		{
+			"id": "P2",
+			"datatype": "string",
+			"labels": {
+				"fr": "identifiant de la zone"
+			}
+		},
+		{
+			"id": "P3",
+			"datatype": "URL",
+			"labels": {
+				"fr": "URL pérenne"
+			}
+		},
+		{
+			"id": "P4",
+			"datatype": "item",
+			"labels": {
+				"fr": "Type d'entité"
+			}
+		},
+		{
+			"id": "P5",
+			"datatype": "external-id",
+			"labels": {
+				"fr": "Identifiant ISNI"
+			}
+		},
+		{
+			"id": "P6",
+			"datatype": "string",
+			"labels": {
+				"fr": "Source d'import"
+			}
+		},
+		{
+			"id": "P7",
+			"datatype": "string",
+			"labels": {
+				"fr": "Nom"
+			}
+		},
+		{
+			"id": "P8",
+			"datatype": "string",
+			"labels": {
+				"fr": "Prénom"
+			}
+		},
+		{
+			"id": "P9",
+			"datatype": "time",
+			"labels": {
+				"fr": "Date de naissance"
+			}
+		},
+		{
+			"id": "P10",
+			"datatype": "time",
+			"labels": {
+				"fr": "Date de décès"
+			}
+		},
+		{
+			"id": "P11",
+			"datatype": "string",
+			"labels": {
+				"fr": "Activité"
+			}
+		},
+		{
+			"id": "P12",
+			"datatype": "string",
+			"labels": {
+				"fr": "Titre de l'oeuvre"
+			}
+		},
+		{
+			"id": "P13",
+			"datatype": "string",
+			"labels": {
+				"fr": "Langue de l'oeuvre"
+			}
+		}
 
-  ],
-  "items": [
-    {
-      "id": "Q1",
-      "claims": {
-        "P3": [
-          {
-            "value": "<valeur de zone 003>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_003" ],
-                "P1": [ "<copie intégrale de la zone 003>" ]
-              }
-            ]
-          }
-        ],
-		"P4": [
-          {
-            "value": "<valeur de position 09 de leader (référentiel)>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_000" ],
-                "P1": [ "<copie intégrale du leader>" ]
-              }
-            ]
-          }
-        ],
-		"P5": [
-          {
-            "value": "<valeur de zone 031 $a>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P6": [ "<valeur de zone 031 $2>" ]
-              },
-              {
-                "P2": [ "intermarc_031" ],
-                "P1": [ "<copie intégrale de la zone 031>" ]
-              }
-            ]
-          }
-        ],
-		"P7": [
-          {
-            "value": "<valeur de zone 100 $a>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_100" ],
-                "P1": [ "<copie intégrale de la zone 100>" ]
-              }
-            ]
-          }
-        ],
-		"P8": [
-          {
-            "value": "<valeur de zone 100 $m>",
-            "qualifiers": {},
-            "references": [
-             {
-                "P2": [ "intermarc_100" ],
-                "P1": [ "<copie intégrale de la zone 100>" ]
-              }
-            ]
-          }
-        ],
-		"P9": [
-          {
-            "value": "<valeur de position 27 à 36 de controlfield 008>",
-            "qualifiers": {},
-            "references": [
-             {
-                "P2": [ "intermarc_008" ],
-                "P1": [ "<copie intégrale de la zone 008>" ]
-              }
-            ]
-          }
-        ],
-		"P10": [
-          {
-            "value": "<valeur de position 37 à 46 de controlfield 008>",
-            "qualifiers": {},
-            "references": [
-            {
-                "P2": [ "intermarc_008" ],
-                "P1": [ "<copie intégrale de la zone 008>" ]
-              }
-            ]
-          }
-        ],
-		"P11": [
-          {
-            "value": "<valeur de zone 045 $a>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_045" ],
-                "P1": [ "<copie intégrale de la zone 045>" ]
-              }
-            ]
-          }
-        ],
-      }
-    }
-	"id": "Q2",
-      "claims": {
-        "P3": [
-          {
-            "value": "<valeur de zone 003>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_003" ],
-                "P1": [ "<copie intégrale de la zone 003>" ]
-              }
-            ]
-          }
-        ],
-		"P4": [
-          {
-            "value": "valeur de position 09 de leader (référentiel)",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_000" ],
-                "P1": [ "<copie intégrale du leader>" ]
-              }
-            ]
-          }
-        ],
-		"P12": [
-          {
-            "value": "<valeur de zone 145 $a>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_145" ],
-                "P1": [ "<copie intégrale de la zone 145>" ]
-              }
-            ]
-          }
-        ],
-		"P12": [
-          {
-            "value": "<valeur de zone 144 $a>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_144" ],
-                "P1": [ "<copie intégrale de la zone 145>" ]
-              }
-            ]
-          }
-        ],
-		"P12": [
-          {
-            "value": "<valeur de zone 141 $a>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_141" ],
-                "P1": [ "<copie intégrale de la zone 141>" ]
-              }
-            ]
-          }
-        ],
-		"P13": [
-          {
-            "value": "<valeur de position 14 à 16 de controlfield 008>",
-            "qualifiers": {},
-            "references": [
-              {
-                "P2": [ "intermarc_008" ],
-                "P1": [ "<copie intégrale de la zone 008>" ]
-              }
-            ]
-          }
-        ],
-      }
-    }
-  ]
+	],
+	"items": [{
+			"id": "Q1",
+			"claims": {
+				"P3": [{
+					"value": "<valeur de zone 003>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_003"],
+						"P1": ["<copie intégrale de la zone 003>"]
+					}]
+				}],
+				"P4": [{
+					"value": "<valeur de position 09 de leader (référentiel)>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_000"],
+						"P1": ["<copie intégrale du leader>"]
+					}]
+				}],
+				"P5": [{
+					"value": "<valeur de zone 031 $a>",
+					"qualifiers": {},
+					"references": [{
+							"P6": ["<valeur de zone 031 $2>"]
+						},
+						{
+							"P2": ["intermarc_031"],
+							"P1": ["<copie intégrale de la zone 031>"]
+						}
+					]
+				}],
+				"P7": [{
+					"value": "<valeur de zone 100 $a>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_100"],
+						"P1": ["<copie intégrale de la zone 100>"]
+					}]
+				}],
+				"P8": [{
+					"value": "<valeur de zone 100 $m>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_100"],
+						"P1": ["<copie intégrale de la zone 100>"]
+					}]
+				}],
+				"P9": [{
+					"value": "<valeur de position 27 à 36 de controlfield 008>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_008"],
+						"P1": ["<copie intégrale de la zone 008>"]
+					}]
+				}],
+				"P10": [{
+					"value": "<valeur de position 37 à 46 de controlfield 008>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_008"],
+						"P1": ["<copie intégrale de la zone 008>"]
+					}]
+				}],
+				"P11": [{
+					"value": "<valeur de zone 045 $a>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_045"],
+						"P1": ["<copie intégrale de la zone 045>"]
+					}]
+				}]
+			}
+		},
+		{
+			"id": "Q2",
+			"claims": {
+				"P3": [{
+					"value": "<valeur de zone 003>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_003"],
+						"P1": ["<copie intégrale de la zone 003>"]
+					}]
+				}],
+				"P4": [{
+					"value": "valeur de position 09 de leader (référentiel)",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_000"],
+						"P1": ["<copie intégrale du leader>"]
+					}]
+				}],
+				"P12": [{
+					"value": "<valeur de zone 145 $a>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_145"],
+						"P1": ["<copie intégrale de la zone 145>"]
+					}]
+				}],
+				"P12a": [{
+					"value": "<valeur de zone 144 $a>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_144"],
+						"P1": ["<copie intégrale de la zone 145>"]
+					}]
+				}],
+				"P12b": [{
+					"value": "<valeur de zone 141 $a>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_141"],
+						"P1": ["<copie intégrale de la zone 141>"]
+					}]
+				}],
+				"P13": [{
+					"value": "<valeur de position 14 à 16 de controlfield 008>",
+					"qualifiers": {},
+					"references": [{
+						"P2": ["intermarc_008"],
+						"P1": ["<copie intégrale de la zone 008>"]
+					}]
+				}]
+			}
+		}
+	]
 }
