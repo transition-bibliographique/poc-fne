@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "extract": "./scripts/extract.js",
+    "etl-notices": "./scripts/etl_notices.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "wikibase-edit": "^3.0.3",
+    "wikibase-sdk": "^7.0.9",
+    "xml2json": "^0.11.2"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "should": "^13.2.3"
+  },
+  "standard": {
+    "globals": [
+      "it",
+      "describe"
+    ]
+  }
+}
