@@ -1,5 +1,5 @@
 require('should')
-const lesReveriesDuPromeneur = require('../echantillons/LesReveriesDuPromeneur_BnF_11935154.json')
+const sampleBNFwork = require('./fixtures/sample_BNF_work.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
@@ -10,8 +10,8 @@ describe('load items on wikibase', function () {
 
   it('should return a list of items', done => {
     const itemPseudoId = '.0..b.fre..Les rêveries du promeneur solitaire'
-    const properties = parseProperties(lesReveriesDuPromeneur)
-    const { items, relations } = parseNotice(lesReveriesDuPromeneur)
+    const properties = parseProperties(sampleBNFwork)
+    const { items, relations } = parseNotice(sampleBNFwork)
 
     loadProperties(properties)
       .then((wbProps) => {
@@ -27,9 +27,9 @@ describe('load items on wikibase', function () {
   })
 
   it('should return a list of items with relations', done => {
-    const relationProperty = 'interxmarc:s:100'
-    const properties = parseProperties(lesReveriesDuPromeneur)
-    const { items, relations } = parseNotice(lesReveriesDuPromeneur)
+    const relationProperty = 'interxmarc_s_100'
+    const properties = parseProperties(sampleBNFwork)
+    const { items, relations } = parseNotice(sampleBNFwork)
 
     loadProperties(properties)
       .then((wbProps) => {
