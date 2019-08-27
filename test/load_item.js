@@ -1,5 +1,5 @@
 require('should')
-const robertFlemingNotice = require('../echantillons/RobertFleming_BnF_14797579.json')
+const sampleBNFpep = require('./fixtures/sample_BNF_pep.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
@@ -11,8 +11,8 @@ describe('load item on wikibase', function () {
 
   it('should return an item with a wb id and wb claims', done => {
     const itemPseudoId = '0  b.Fleming.Robert.1921-1976'
-    const properties = parseProperties(robertFlemingNotice)
-    const { items } = parseNotice(robertFlemingNotice)
+    const properties = parseProperties(sampleBNFpep)
+    const { items } = parseNotice(sampleBNFpep)
     const item = items[0]
 
     Promise.all([
