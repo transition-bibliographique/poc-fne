@@ -2,7 +2,8 @@
   "scripts": {
     "extract": "./scripts/extract.js",
     "etl-notices": "./scripts/etl_notices.js",
-    "test": "mocha"
+    "test": "mocha",
+    "test-node-env": "./scripts/test_node_env.js"
   },
   "dependencies": {
     "lodash": "^4.17.15",
