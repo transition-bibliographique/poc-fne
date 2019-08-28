@@ -3,10 +3,10 @@ const sampleBNFwork = require('./fixtures/sample_BNF_work.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
-describe('create pseudo properties from an interxmarc oeuvre', () => {
+describe('create pseudo properties from an intermarc oeuvre', () => {
   describe('transform datafield', () => {
     it('should return an object of pseudo properties', done => {
-      const propertyId = 'interxmarc_600_a_0'
+      const propertyId = 'intermarc_600_a_0'
       const properties = parseProperties(sampleBNFwork)
       properties.should.be.an.Object()
       const propertiesList = Object.keys(properties)
@@ -21,7 +21,7 @@ describe('create pseudo properties from an interxmarc oeuvre', () => {
   })
   describe('transform controlfield', () => {
     it('should return an object of pseudo properties', done => {
-      const propertyId = 'interxmarc_001'
+      const propertyId = 'intermarc_001'
       const properties = parseProperties(sampleBNFwork)
       const propertiesList = Object.keys(properties)
       propertiesList.includes(propertyId).should.be.true()
@@ -30,7 +30,7 @@ describe('create pseudo properties from an interxmarc oeuvre', () => {
   })
   describe('transform leader', () => {
     it('should return an object of pseudo properties', done => {
-      const propertyId = 'interxmarc_leader'
+      const propertyId = 'intermarc_leader'
       const properties = parseProperties(sampleBNFwork)
       const propertiesList = Object.keys(properties)
       propertiesList.includes(propertyId).should.be.true()
@@ -39,7 +39,7 @@ describe('create pseudo properties from an interxmarc oeuvre', () => {
   })
 })
 
-describe('create a pseudo item from an interxmarc oeuvre', () => {
+describe('create a pseudo item from an intermarc oeuvre', () => {
   describe('transform datafield', () => {
     it('should return a pseudo item id', done => {
       const itemId = '.0..b.fre..Les rêveries du promeneur solitaire'
@@ -59,7 +59,7 @@ describe('create a pseudo item from an interxmarc oeuvre', () => {
   })
   describe('transform datacontrol', () => {
     it('should return pseudo claims', done => {
-      const itemPropertyPseudoId = 'interxmarc_001'
+      const itemPropertyPseudoId = 'intermarc_001'
       const { items } = parseNotice(sampleBNFwork)
       const item = items[0]
       item.claims.should.be.an.Object()
@@ -70,7 +70,7 @@ describe('create a pseudo item from an interxmarc oeuvre', () => {
   })
   describe('transform leader', () => {
     it('should return pseudo claims', done => {
-      const itemPropertyPseudoId = 'interxmarc_leader'
+      const itemPropertyPseudoId = 'intermarc_leader'
       const { items } = parseNotice(sampleBNFwork)
       const item = items[0]
       item.claims.should.be.an.Object()
@@ -87,7 +87,7 @@ describe('create a pseudo item from an interxmarc oeuvre', () => {
       const pepPseudoId = '11922879.ISNI0000000121451116..0..b......Rousseau.Jean-Jacques.1712-1778'
       pepItem.pseudoId.should.equal(pepPseudoId)
       relations[0].subject.should.equal(oeuvreItem.pseudoId)
-      relations[0].property.should.equal('interxmarc_s_100')
+      relations[0].property.should.equal('intermarc_s_100')
       relations[0].object.should.equal(pepPseudoId)
       done()
     })

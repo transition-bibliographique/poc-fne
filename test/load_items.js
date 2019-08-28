@@ -27,7 +27,7 @@ describe('load items on wikibase', function () {
   })
 
   it('should return a list of items with relations', done => {
-    const relationProperty = 'interxmarc_s_100'
+    const relationProperty = 'intermarc_s_100'
     const properties = parseProperties(sampleBNFwork)
     const { items, relations } = parseNotice(sampleBNFwork)
 

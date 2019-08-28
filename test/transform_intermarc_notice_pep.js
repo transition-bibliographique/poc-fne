@@ -3,12 +3,12 @@ const sampleBNFpep = require('./fixtures/sample_BNF_pep.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
-describe('create pseudo properties from an interxmarc pep', function () {
+describe('create pseudo properties from an intermarc pep', function () {
   this.timeout(20000)
 
   describe('transform controlfield', () => {
     it('should return an object of pseudo properties', done => {
-      const propertyId = 'interxmarc_001'
+      const propertyId = 'intermarc_001'
       const properties = parseProperties(sampleBNFpep)
       const propertiesList = Object.keys(properties)
       propertiesList.includes(propertyId).should.be.true()
@@ -17,7 +17,7 @@ describe('create pseudo properties from an interxmarc pep', function () {
   })
   describe('transform leader', () => {
     it('should return an object of pseudo properties', done => {
-      const propertyId = 'interxmarc_leader'
+      const propertyId = 'intermarc_leader'
       const properties = parseProperties(sampleBNFpep)
       const propertiesList = Object.keys(properties)
       propertiesList.includes(propertyId).should.be.true()
@@ -26,7 +26,7 @@ describe('create pseudo properties from an interxmarc pep', function () {
   })
 })
 
-describe('create a pseudo item from an interxmarc pep', () => {
+describe('create a pseudo item from an intermarc pep', () => {
   describe('transform datafield', () => {
     it('should return a pseudo item id', done => {
       const itemPseudoId = '0  b.Fleming.Robert.1921-1976'
@@ -41,7 +41,7 @@ describe('create a pseudo item from an interxmarc pep', () => {
   })
   describe('transform datacontrol', () => {
     it('should return pseudo claims', done => {
-      const itemPropertyPseudoId = 'interxmarc_001'
+      const itemPropertyPseudoId = 'intermarc_001'
       const { items } = parseNotice(sampleBNFpep)
       const item = items[0]
       item.claims.should.be.an.Object()
@@ -52,7 +52,7 @@ describe('create a pseudo item from an interxmarc pep', () => {
   })
   describe('transform leader', () => {
     it('should return pseudo claims', done => {
-      const itemPropertyPseudoId = 'interxmarc_leader'
+      const itemPropertyPseudoId = 'intermarc_leader'
       const { items } = parseNotice(sampleBNFpep)
       const item = items[0]
       item.claims.should.be.an.Object()
@@ -67,7 +67,7 @@ describe('create a pseudo item from an interxmarc pep', () => {
     it('should add modelized claim', done => {
       const { items } = parseNotice(sampleBNFpep)
       const [ oeuvreItem ] = items
-      const pseudoPropertyId = 'interxmarc_p_031'
+      const pseudoPropertyId = 'intermarc_p_031'
       oeuvreItem.claims[pseudoPropertyId].should.be.an.Array()
       const claim = oeuvreItem.claims[pseudoPropertyId][0]
       claim.should.be.an.Object()
