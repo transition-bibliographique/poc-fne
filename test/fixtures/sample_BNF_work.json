@@ -1,1 +1,157 @@
-{"format":"INTERMARC","id":"ark:/12148/cb11935154w","type":"Authority","leader":"00469c1 as22000272  45","controlfield":[{"tag":"001","$t":"FRBNF119351548"},{"tag":"003","$t":"http://catalogue.bnf.fr/ark:/12148/cb11935154w"},{"tag":"008","$t":"810213060208yyfre           1776      1778                   010"}],"datafield":[{"ind1":" ","ind2":" ","tag":"043","subfields":[{"code":"o","$t":"te"}]},{"ind1":" ","ind2":" ","tag":"100","subfields":[{"code":"3","$t":"11922879"},{"code":"1","$t":"ISNI0000000121451116"},{"code":"w","$t":".0..b....."},{"code":"a","$t":"Rousseau"},{"code":"m","$t":"Jean-Jacques"},{"code":"d","$t":"1712-1778"}]},{"ind1":"1","ind2":"6","tag":"145","subfields":[{"code":"w","$t":".0..b.fre."},{"code":"a","$t":"Les rêveries du promeneur solitaire"}]},{"ind1":" ","ind2":" ","tag":"600","subfields":[{"code":"a","$t":"Suite de dix promenades autobiographiques composées entre 1776 et 1778 et publiées en 1782"}]},{"ind1":" ","ind2":" ","tag":"610","subfields":[{"code":"a","$t":"Laffont Bompiani, Oeuvres, 1994"}]},{"ind1":" ","ind2":" ","tag":"610","subfields":[{"code":"a","$t":"Van Tieghem"},{"code":"a","$t":"Beaumarchais"}]},{"ind1":" ","ind2":" ","tag":"624","subfields":[{"code":"a","$t":"800"}]},{"ind1":" ","ind2":" ","tag":"907","subfields":[{"code":"o","$t":"GEA"},{"code":"a","$t":"000563148"}]},{"ind1":" ","ind2":" ","tag":"917","subfields":[{"code":"o","$t":"OPL"},{"code":"a","$t":"001566332"}]}]}
+{
+  "format": "INTERMARC",
+  "id": "ark:/12148/cb11935154w",
+  "type": "Authority",
+  "leader": "00469c1 as22000272  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "FRBNF119351548"
+    },
+    {
+      "tag": "003",
+      "$t": "http://catalogue.bnf.fr/ark:/12148/cb11935154w"
+    },
+    {
+      "tag": "008",
+      "$t": "810213060208yyfre           1776      1778                   010"
+    }
+  ],
+  "datafield": [
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "043",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "te"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "100",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "11922879"
+        },
+        {
+          "code": "1",
+          "$t": "ISNI0000000121451116"
+        },
+        {
+          "code": "w",
+          "$t": ".0..b....."
+        },
+        {
+          "code": "a",
+          "$t": "Rousseau"
+        },
+        {
+          "code": "m",
+          "$t": "Jean-Jacques"
+        },
+        {
+          "code": "d",
+          "$t": "1712-1778"
+        }
+      ]
+    },
+    {
+      "ind1": "1",
+      "ind2": "6",
+      "tag": "145",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": ".0..b.fre."
+        },
+        {
+          "code": "a",
+          "$t": "Les rêveries du promeneur solitaire"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "600",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Suite de dix promenades autobiographiques composées entre 1776 et 1778 et publiées en 1782"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Laffont Bompiani, Oeuvres, 1994"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Van Tieghem"
+        },
+        {
+          "code": "a",
+          "$t": "Beaumarchais"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "624",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "800"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "907",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "GEA"
+        },
+        {
+          "code": "a",
+          "$t": "000563148"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPL"
+        },
+        {
+          "code": "a",
+          "$t": "001566332"
+        }
+      ]
+    }
+  ]
+}

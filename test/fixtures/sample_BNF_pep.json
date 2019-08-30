@@ -1,1 +1,177 @@
-{"format":"INTERMARC","id":"ark:/12148/cb147975794","type":"Authority","leader":"00615c0 ap22000272  45","controlfield":[{"tag":"001","$t":"FRBNF14797579X"},{"tag":"003","$t":"http://catalogue.bnf.fr/ark:/12148/cb147975794"},{"tag":"008","$t":"970528101018ca   m          19211112  19761128             a 1"}],"datafield":[{"ind1":" ","ind2":" ","tag":"031","subfields":[{"code":"a","$t":"0000000073689743"},{"code":"2","$t":"VIAF"},{"code":"d","$t":"20130802"}]},{"ind1":" ","ind2":" ","tag":"045","subfields":[{"code":"a","$t":"a"}]},{"ind1":" ","ind2":" ","tag":"100","subfields":[{"code":"w","$t":"0  b"},{"code":"a","$t":"Fleming"},{"code":"m","$t":"Robert"},{"code":"d","$t":"1921-1976"}]},{"ind1":" ","ind2":" ","tag":"600","subfields":[{"code":"a","$t":"Pianiste et compositeur"}]},{"ind1":" ","ind2":" ","tag":"610","subfields":[{"code":"a","$t":"Six variations on a liturgical theme [Musique imprimée] : for string orchestra / Robert Fleming, [1946]"}]},{"ind1":" ","ind2":" ","tag":"610","subfields":[{"code":"a","$t":"Grove music online"},{"code":"u","$t":"http://www.oxfordmusiconline.com"},{"code":"d","$t":"2010-10-18"},{"code":"a","$t":"Dictionnaire biographique des musiciens / Theodore Baker, Nicolas Slonimsky, 1995"},{"code":"a","$t":"Encycl. of music in Canada"}]},{"ind1":" ","ind2":" ","tag":"917","subfields":[{"code":"o","$t":"OPD"},{"code":"a","$t":"100207930"},{"code":"b","$t":"APP"}]},{"ind1":" ","ind2":" ","tag":"917","subfields":[{"code":"o","$t":"OPC"},{"code":"a","$t":"102144780"}]},{"ind1":" ","ind2":" ","tag":"996","subfields":[{"code":"o","$t":"OPP"},{"code":"a","$t":"14061689"},{"code":"d","$t":"20101018"}]}]}
+{
+  "format": "INTERMARC",
+  "id": "ark:/12148/cb147975794",
+  "type": "Authority",
+  "leader": "00615c0 ap22000272  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "FRBNF14797579X"
+    },
+    {
+      "tag": "003",
+      "$t": "http://catalogue.bnf.fr/ark:/12148/cb147975794"
+    },
+    {
+      "tag": "008",
+      "$t": "970528101018ca   m          19211112  19761128             a 1"
+    }
+  ],
+  "datafield": [
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "031",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0000000073689743"
+        },
+        {
+          "code": "2",
+          "$t": "VIAF"
+        },
+        {
+          "code": "d",
+          "$t": "20130802"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "045",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "a"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "100",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "0  b"
+        },
+        {
+          "code": "a",
+          "$t": "Fleming"
+        },
+        {
+          "code": "m",
+          "$t": "Robert"
+        },
+        {
+          "code": "d",
+          "$t": "1921-1976"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "600",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Pianiste et compositeur"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Six variations on a liturgical theme [Musique imprimée] : for string orchestra / Robert Fleming, [1946]"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Grove music online"
+        },
+        {
+          "code": "u",
+          "$t": "http://www.oxfordmusiconline.com"
+        },
+        {
+          "code": "d",
+          "$t": "2010-10-18"
+        },
+        {
+          "code": "a",
+          "$t": "Dictionnaire biographique des musiciens / Theodore Baker, Nicolas Slonimsky, 1995"
+        },
+        {
+          "code": "a",
+          "$t": "Encycl. of music in Canada"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPD"
+        },
+        {
+          "code": "a",
+          "$t": "100207930"
+        },
+        {
+          "code": "b",
+          "$t": "APP"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPC"
+        },
+        {
+          "code": "a",
+          "$t": "102144780"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14061689"
+        },
+        {
+          "code": "d",
+          "$t": "20101018"
+        }
+      ]
+    }
+  ]
+}
