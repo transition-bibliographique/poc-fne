@@ -1,5 +1,7 @@
 require('should')
 const sampleBNFwork = require('./fixtures/sample_BNF_work.json')
+const sampleABESwork = require('./fixtures/sample_ABES_work.json')
+const sampleABESpersonne = require('./fixtures/sample_ABES_personne.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
@@ -27,7 +29,6 @@ describe('load items on wikibase', function () {
   })
 
   it('should return a list of items with relations', done => {
-    const relationProperty = 'intermarc_s_100'
     const properties = parseProperties(sampleBNFwork)
     const { items, relations } = parseNotice(sampleBNFwork)
 
@@ -43,5 +44,29 @@ describe('load items on wikibase', function () {
           })
       })
       .catch(done)
+  })
+
+  it('should enrich a pre-existing item', done => {
+    const workProperties = parseProperties(sampleABESwork)
+    const personneProperties = parseProperties(sampleABESpersonne)
+    const { items: workItems, relations } = parseNotice(sampleABESwork)
+    const { items: personneItems } = parseNotice(sampleABESpersonne)
+    loadProperties(workProperties)
+    .then((wbWorkProps) => {
+      return loadItems(workItems, relations, wbWorkProps)
+      .then((workLoadRes) => {
+        const personneId = workLoadRes.relations[0].claim.mainsnak.datavalue.value.id
+        return loadProperties(personneProperties)
+        .then((wbPersonneProps) => {
+          return loadItems(personneItems, null, wbPersonneProps)
+          .then((personneLoadRes) => {
+            const personneItem = Object.values(personneLoadRes.entities)[0]
+            personneItem.id.should.equal(personneId)
+            done()
+          })
+        })
+      })
+    })
+    .catch(done)
   })
 })
