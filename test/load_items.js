@@ -6,6 +6,7 @@ const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
 const loadItems = require('../lib/load/load_items')
+const wbSdk = require('wikibase-sdk')
 
 describe('load items on wikibase', function () {
   this.timeout(20000)
@@ -64,6 +65,31 @@ describe('load items on wikibase', function () {
             personneItem.id.should.equal(personneId)
             done()
           })
+        })
+      })
+    })
+    .catch(done)
+  })
+
+  it('should not re-create existing relations', done => {
+    const workProperties = parseProperties(sampleABESwork)
+    const { items, relations } = parseNotice(sampleABESwork)
+    const workPseudoId = relations[0].subject
+    const personnePseudoId = relations[0].object
+    loadProperties(workProperties)
+    .then((wbWorkProps) => {
+      return loadItems(items, relations, wbWorkProps)
+      .then((workLoadRes1) => {
+        return loadItems(items, relations, wbWorkProps)
+        .then((workLoadRes2) => {
+          const relationPropertyId = workLoadRes2.relations[0].claim.mainsnak.property
+          const wbItems = Object.values(workLoadRes2.entities)
+          const workItem = wbItems.find((item) => item.labels.en.value === workPseudoId)
+          const personneItem = wbItems.find((item) => item.labels.en.value === personnePseudoId)
+          // Simplify claims individually to avoid having wbSdk.simplify.claims perform a uniq on the values
+          const relationClaims = workItem.claims[relationPropertyId].map(wbSdk.simplify.claim)
+          relationClaims.should.deepEqual([ personneItem.id ])
+          done()
         })
       })
     })
