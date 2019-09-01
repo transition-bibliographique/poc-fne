@@ -92,4 +92,21 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
       done()
     })
   })
+
+  describe('pivot property claims', () => {
+    it('should return "URL pérenne" claims', done => {
+      const { items } = parseNotice(sampleBNFwork)
+      const [ oeuvreItem ] = items
+      oeuvreItem.claims["URL pérenne"].should.be.an.Array()
+      const claim = oeuvreItem.claims["URL pérenne"][0]
+      claim.value.should.equal('http://catalogue.bnf.fr/ark:/12148/cb11935154w')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.deepEqual({
+        'identifiant de la zone': 'intermarc_003',
+        'données source de la zone': 'http://catalogue.bnf.fr/ark:/12148/cb11935154w'
+      })
+      done()
+    })
+  })
 })
