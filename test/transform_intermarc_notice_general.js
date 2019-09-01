@@ -4,7 +4,7 @@ const sampleBNFpep = require('./fixtures/sample_BNF_pep.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
-describe('intermarc pivot property claims', () => {
+describe('intermarc common pivot property claims', () => {
   it('should return "URL pérenne" claims', done => {
     const oeuvreItem = parseNotice(sampleBNFwork).items[0]
     oeuvreItem.claims["URL pérenne"].should.be.an.Array()
@@ -45,66 +45,6 @@ describe('intermarc pivot property claims', () => {
     claim.references[1].should.deepEqual({
       'identifiant de la zone': 'intermarc_031',
       'données source de la zone': '$a 0000000073689743 $2 VIAF $d 20130802'
-    })
-    done()
-  })
-
-  it('should return "Nom" claims', done => {
-    const pepItem = parseNotice(sampleBNFpep).items[0]
-    pepItem.claims['Nom'].should.be.an.Array()
-    const claim = pepItem.claims['Nom'][0]
-    claim.value.should.equal('Fleming')
-    claim.references[0].should.deepEqual({
-      'identifiant de la zone': 'intermarc_100',
-      'données source de la zone': '$w 0  b $a Fleming $m Robert $d 1921-1976'
-    })
-    done()
-  })
-
-  it('should return "Prénom" claims', done => {
-    const pepItem = parseNotice(sampleBNFpep).items[0]
-    pepItem.claims['Prénom'].should.be.an.Array()
-    const claim = pepItem.claims['Prénom'][0]
-    claim.value.should.equal('Robert')
-    claim.references[0].should.deepEqual({
-      'identifiant de la zone': 'intermarc_100',
-      'données source de la zone': '$w 0  b $a Fleming $m Robert $d 1921-1976'
-    })
-    done()
-  })
-
-  it('should return "Date de naissance" claims', done => {
-    const pepItem = parseNotice(sampleBNFpep).items[0]
-    pepItem.claims['Date de naissance'].should.be.an.Array()
-    const claim = pepItem.claims['Date de naissance'][0]
-    claim.value.should.equal('1921-11-12')
-    claim.references[0].should.deepEqual({
-      'identifiant de la zone': 'intermarc_008',
-      'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
-    })
-    done()
-  })
-
-  it('should return "Date de décès" claims', done => {
-    const pepItem = parseNotice(sampleBNFpep).items[0]
-    pepItem.claims['Date de décès'].should.be.an.Array()
-    const claim = pepItem.claims['Date de décès'][0]
-    claim.value.should.equal('1976-11-28')
-    claim.references[0].should.deepEqual({
-      'identifiant de la zone': 'intermarc_008',
-      'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
-    })
-    done()
-  })
-
-  it('should return "Activité" claims', done => {
-    const pepItem = parseNotice(sampleBNFpep).items[0]
-    pepItem.claims['Activité'].should.be.an.Array()
-    const claim = pepItem.claims['Activité'][0]
-    claim.value.should.equal('a')
-    claim.references[0].should.deepEqual({
-      'identifiant de la zone': 'intermarc_045',
-      'données source de la zone': '$a a'
     })
     done()
   })

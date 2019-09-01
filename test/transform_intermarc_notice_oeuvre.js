@@ -43,8 +43,7 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
   describe('transform datafield', () => {
     it('should return a pseudo item id', done => {
       const itemId = '.0..b.fre..Les rêveries du promeneur solitaire'
-      const { items } = parseNotice(sampleBNFwork)
-      const item = items[0]
+      const item = parseNotice(sampleBNFwork).items[0]
       item.should.be.an.Object()
       item.pseudoId.should.equal(itemId)
       item.labels.fr.should.equal(itemId)
@@ -60,8 +59,7 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
   describe('transform datacontrol', () => {
     it('should return pseudo claims', done => {
       const itemPropertyPseudoId = 'intermarc_001'
-      const { items } = parseNotice(sampleBNFwork)
-      const item = items[0]
+      const item = parseNotice(sampleBNFwork).items[0]
       item.claims.should.be.an.Object()
       item.claims[itemPropertyPseudoId].should.be.an.Array()
       item.claims[itemPropertyPseudoId][0].should.equal('FRBNF119351548')
@@ -78,6 +76,18 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
       relations[0].subject.should.equal(oeuvreItem.pseudoId)
       relations[0].property.should.equal('intermarc_s_100')
       relations[0].object.should.equal(pepPseudoId)
+      done()
+    })
+  })
+
+  describe('pivot property claims', () => {
+    it('should not return pep specific claims', done => {
+      const item = parseNotice(sampleBNFwork).items[0]
+      should(item.claims['Nom']).not.be.ok()
+      should(item.claims['Prénom']).not.be.ok()
+      should(item.claims['Date de naissance']).not.be.ok()
+      should(item.claims['Date de décès']).not.be.ok()
+      should(item.claims['Activité']).not.be.ok()
       done()
     })
   })
