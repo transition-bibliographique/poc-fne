@@ -96,4 +96,16 @@ describe('intermarc pivot property claims', () => {
     })
     done()
   })
+
+  it('should return "Activité" claims', done => {
+    const pepItem = parseNotice(sampleBNFpep).items[0]
+    pepItem.claims['Activité'].should.be.an.Array()
+    const claim = pepItem.claims['Activité'][0]
+    claim.value.should.equal('a')
+    claim.references[0].should.deepEqual({
+      'identifiant de la zone': 'intermarc_045',
+      'données source de la zone': '$a a'
+    })
+    done()
+  })
 })
