@@ -111,5 +111,12 @@ describe('create a pseudo item from an intermarc pep', () => {
       })
       done()
     })
+
+    it('should not return non-pep type specific claims', done => {
+      const pepItem = parseNotice(sampleBNFpep).items[0]
+      should(pepItem.claims["Titre de l'oeuvre"]).not.be.ok()
+      should(pepItem.claims["Langue de l'oeuvre"]).not.be.ok()
+      done()
+    })
   })
 })

@@ -95,7 +95,21 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
       done()
     })
 
-    it('should not return pep specific claims', done => {
+    it('should return "Langue de l\'oeuvre" claims', done => {
+      const oeuvreItem = parseNotice(sampleBNFwork).items[0]
+      oeuvreItem.claims["Langue de l'oeuvre"].should.be.an.Array()
+      const claim = oeuvreItem.claims["Langue de l'oeuvre"][0]
+      claim.value.should.equal('fre')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.deepEqual({
+        'identifiant de la zone': 'intermarc_008',
+        'données source de la zone': '810213060208yyfre           1776      1778                   010'
+      })
+      done()
+    })
+
+    it('should not return non-oeuvre type specific claims', done => {
       const item = parseNotice(sampleBNFwork).items[0]
       should(item.claims['Nom']).not.be.ok()
       should(item.claims['Prénom']).not.be.ok()
