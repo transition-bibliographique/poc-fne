@@ -50,18 +50,6 @@ describe('create a pseudo item from an intermarc pep', () => {
       done()
     })
   })
-  describe('transform leader', () => {
-    it('should return pseudo claims', done => {
-      const itemPropertyPseudoId = 'intermarc_leader'
-      const { items } = parseNotice(sampleBNFpep)
-      const item = items[0]
-      item.claims.should.be.an.Object()
-
-      item.claims[itemPropertyPseudoId].should.be.an.Array()
-      item.claims[itemPropertyPseudoId][0].should.equal('00615c0 ap22000272  45')
-      done()
-    })
-  })
 
   describe('add modelized claims', () => {
     it('should add modelized claim', done => {

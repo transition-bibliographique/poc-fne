@@ -68,17 +68,6 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
       done()
     })
   })
-  describe('transform leader', () => {
-    it('should return pseudo claims', done => {
-      const itemPropertyPseudoId = 'intermarc_leader'
-      const { items } = parseNotice(sampleBNFwork)
-      const item = items[0]
-      item.claims.should.be.an.Object()
-      item.claims[itemPropertyPseudoId].should.be.an.Array()
-      item.claims[itemPropertyPseudoId][0].should.equal('00469c1 as22000272  45')
-      done()
-    })
-  })
 
   describe('pep relation', () => {
     it('should return a pep item', done => {
@@ -105,6 +94,21 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
       reference.should.deepEqual({
         'identifiant de la zone': 'intermarc_003',
         'données source de la zone': 'http://catalogue.bnf.fr/ark:/12148/cb11935154w'
+      })
+      done()
+    })
+
+    it('should return "Type d\'entité" claims', done => {
+      const { items } = parseNotice(sampleBNFwork)
+      const [ oeuvreItem ] = items
+      oeuvreItem.claims["Type d'entité"].should.be.an.Array()
+      const claim = oeuvreItem.claims["Type d'entité"][0]
+      claim.value.should.equal('œuvre')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.deepEqual({
+        'identifiant de la zone': 'intermarc_000',
+        'données source de la zone': '00469c1 as22000272  45'
       })
       done()
     })
