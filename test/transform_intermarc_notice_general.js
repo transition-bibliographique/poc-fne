@@ -72,4 +72,28 @@ describe('intermarc pivot property claims', () => {
     })
     done()
   })
+
+  it('should return "Date de naissance" claims', done => {
+    const pepItem = parseNotice(sampleBNFpep).items[0]
+    pepItem.claims['Date de naissance'].should.be.an.Array()
+    const claim = pepItem.claims['Date de naissance'][0]
+    claim.value.should.equal('1921-11-12')
+    claim.references[0].should.deepEqual({
+      'identifiant de la zone': 'intermarc_008',
+      'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
+    })
+    done()
+  })
+
+  it('should return "Date de décès" claims', done => {
+    const pepItem = parseNotice(sampleBNFpep).items[0]
+    pepItem.claims['Date de décès'].should.be.an.Array()
+    const claim = pepItem.claims['Date de décès'][0]
+    claim.value.should.equal('1976-11-28')
+    claim.references[0].should.deepEqual({
+      'identifiant de la zone': 'intermarc_008',
+      'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
+    })
+    done()
+  })
 })
