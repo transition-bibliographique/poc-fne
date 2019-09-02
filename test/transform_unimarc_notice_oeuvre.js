@@ -92,4 +92,44 @@ describe('create a pseudo item from an unimarc oeuvre', () => {
       done()
     })
   })
+
+  describe('pivot property claims', () => {
+    it('should return "Titre de l\'oeuvre" claims', done => {
+      const item = parseNotice(sampleABESwork).items[0]
+      item.claims["Titre de l'oeuvre"].should.be.an.Array()
+      const claim = item.claims["Titre de l'oeuvre"][0]
+      claim.value.should.equal('Il Decameron')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.deepEqual({
+        'identifiant de la zone': 'unimarc_230',
+        'données source de la zone': '$7 ba0yba0y $8 freita $9 0 $a Il Decameron $n film'
+      })
+      done()
+    })
+
+    it('should return "Langue de l\'oeuvre" claims', done => {
+      const item = parseNotice(sampleABESwork).items[0]
+      item.claims["Langue de l'oeuvre"].should.be.an.Array()
+      const claim = item.claims["Langue de l'oeuvre"][0]
+      claim.value.should.equal('ita')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.deepEqual({
+        'identifiant de la zone': 'unimarc_101',
+        'données source de la zone': '$a ita'
+      })
+      done()
+    })
+
+    it('should not return non-oeuvre type specific claims', done => {
+      const item = parseNotice(sampleABESwork).items[0]
+      should(item.claims['Nom']).not.be.ok()
+      should(item.claims['Prénom']).not.be.ok()
+      should(item.claims['Date de naissance']).not.be.ok()
+      should(item.claims['Date de décès']).not.be.ok()
+      should(item.claims['Activité']).not.be.ok()
+      done()
+    })
+  })
 })
