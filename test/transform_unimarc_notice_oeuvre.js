@@ -1,5 +1,6 @@
 require('should')
 const sampleABESwork = require('./fixtures/sample_ABES_work.json')
+const sampleABESwork2 = require('./fixtures/sample_ABES_work_2.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
@@ -94,7 +95,21 @@ describe('create a pseudo item from an unimarc oeuvre', () => {
   })
 
   describe('pivot property claims', () => {
-    it('should return "Titre de l\'oeuvre" claims', done => {
+    it('should return "Titre de l\'oeuvre" claims from unimarc_240', done => {
+      const item = parseNotice(sampleABESwork2).items[0]
+      item.claims["Titre de l'oeuvre"].should.be.an.Array()
+      const claim = item.claims["Titre de l'oeuvre"][0]
+      claim.value.should.equal('Alcools')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.deepEqual({
+        'identifiant de la zone': 'unimarc_240',
+        'données source de la zone': '$7 ba0yba0y $a Apollinaire, Guillaume (1880-1918) $t Alcools'
+      })
+      done()
+    })
+
+    it('should return "Titre de l\'oeuvre" claims from unimarc_230', done => {
       const item = parseNotice(sampleABESwork).items[0]
       item.claims["Titre de l'oeuvre"].should.be.an.Array()
       const claim = item.claims["Titre de l'oeuvre"][0]

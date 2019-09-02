@@ -1,0 +1,174 @@
+{
+  "leader": "cx  h22     3  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "027269604"
+    },
+    {
+      "tag": "003",
+      "$t": "http://www.idref.fr/027269604"
+    },
+    {
+      "tag": "004",
+      "$t": "19810213"
+    },
+    {
+      "tag": "005",
+      "$t": "20150929113932.000"
+    },
+    {
+      "tag": "006",
+      "$t": "0004"
+    },
+    {
+      "tag": "007",
+      "$t": "4994"
+    },
+    {
+      "tag": "008",
+      "$t": "Tq5"
+    }
+  ],
+  "datafield": [
+    {
+      "tag": "033",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "http://catalogue.bnf.fr/ark:/12148/cb119347789"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN001561883"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FRBNF119347788"
+        },
+        {
+          "code": "z",
+          "$t": "FRBNF11934778"
+        }
+      ]
+    },
+    {
+      "tag": "100",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "19810213afrey50      ba0"
+        }
+      ]
+    },
+    {
+      "tag": "106",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0"
+        },
+        {
+          "code": "b",
+          "$t": "1"
+        },
+        {
+          "code": "c",
+          "$t": "0"
+        }
+      ]
+    },
+    {
+      "tag": "152",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "AFNOR"
+        }
+      ]
+    },
+    {
+      "tag": "240",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Apollinaire, Guillaume (1880-1918)"
+        },
+        {
+          "code": "t",
+          "$t": "Alcools"
+        }
+      ]
+    },
+    {
+      "tag": "801",
+      "ind1": " ",
+      "ind2": "3",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FR"
+        },
+        {
+          "code": "b",
+          "$t": "Abes"
+        },
+        {
+          "code": "c",
+          "$t": "20150929"
+        },
+        {
+          "code": "g",
+          "$t": "AFNOR"
+        }
+      ]
+    },
+    {
+      "tag": "940",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Apollinaire, Guillaume (1880-1918). Alcools"
+        }
+      ]
+    }
+  ]
+}
