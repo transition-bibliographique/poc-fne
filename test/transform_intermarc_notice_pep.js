@@ -53,9 +53,9 @@ describe('create a pseudo item from an intermarc pep', () => {
 
   describe('pivot property claims', () => {
     it('should return "Nom" claims', done => {
-      const pepItem = parseNotice(sampleBNFpep).items[0]
-      pepItem.claims['Nom'].should.be.an.Array()
-      const claim = pepItem.claims['Nom'][0]
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Nom'].should.be.an.Array()
+      const claim = item.claims['Nom'][0]
       claim.value.should.equal('Fleming')
       claim.references[0].should.deepEqual({
         'identifiant de la zone': 'intermarc_100',
@@ -65,9 +65,9 @@ describe('create a pseudo item from an intermarc pep', () => {
     })
 
     it('should return "Prénom" claims', done => {
-      const pepItem = parseNotice(sampleBNFpep).items[0]
-      pepItem.claims['Prénom'].should.be.an.Array()
-      const claim = pepItem.claims['Prénom'][0]
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Prénom'].should.be.an.Array()
+      const claim = item.claims['Prénom'][0]
       claim.value.should.equal('Robert')
       claim.references[0].should.deepEqual({
         'identifiant de la zone': 'intermarc_100',
@@ -77,9 +77,9 @@ describe('create a pseudo item from an intermarc pep', () => {
     })
 
     it('should return "Date de naissance" claims', done => {
-      const pepItem = parseNotice(sampleBNFpep).items[0]
-      pepItem.claims['Date de naissance'].should.be.an.Array()
-      const claim = pepItem.claims['Date de naissance'][0]
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Date de naissance'].should.be.an.Array()
+      const claim = item.claims['Date de naissance'][0]
       claim.value.should.equal('1921-11-12')
       claim.references[0].should.deepEqual({
         'identifiant de la zone': 'intermarc_008',
@@ -89,9 +89,9 @@ describe('create a pseudo item from an intermarc pep', () => {
     })
 
     it('should return "Date de décès" claims', done => {
-      const pepItem = parseNotice(sampleBNFpep).items[0]
-      pepItem.claims['Date de décès'].should.be.an.Array()
-      const claim = pepItem.claims['Date de décès'][0]
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Date de décès'].should.be.an.Array()
+      const claim = item.claims['Date de décès'][0]
       claim.value.should.equal('1976-11-28')
       claim.references[0].should.deepEqual({
         'identifiant de la zone': 'intermarc_008',
@@ -101,9 +101,9 @@ describe('create a pseudo item from an intermarc pep', () => {
     })
 
     it('should return "Activité" claims', done => {
-      const pepItem = parseNotice(sampleBNFpep).items[0]
-      pepItem.claims['Activité'].should.be.an.Array()
-      const claim = pepItem.claims['Activité'][0]
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Activité'].should.be.an.Array()
+      const claim = item.claims['Activité'][0]
       claim.value.should.equal('a')
       claim.references[0].should.deepEqual({
         'identifiant de la zone': 'intermarc_045',
@@ -113,9 +113,9 @@ describe('create a pseudo item from an intermarc pep', () => {
     })
 
     it('should not return non-pep type specific claims', done => {
-      const pepItem = parseNotice(sampleBNFpep).items[0]
-      should(pepItem.claims["Titre de l'oeuvre"]).not.be.ok()
-      should(pepItem.claims["Langue de l'oeuvre"]).not.be.ok()
+      const item = parseNotice(sampleBNFpep).items[0]
+      should(item.claims["Titre de l'oeuvre"]).not.be.ok()
+      should(item.claims["Langue de l'oeuvre"]).not.be.ok()
       done()
     })
   })

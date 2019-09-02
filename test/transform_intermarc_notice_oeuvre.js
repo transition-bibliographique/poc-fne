@@ -82,9 +82,9 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
 
   describe('pivot property claims', () => {
     it('should return "Titre de l\'oeuvre" claims', done => {
-      const oeuvreItem = parseNotice(sampleBNFwork).items[0]
-      oeuvreItem.claims["Titre de l'oeuvre"].should.be.an.Array()
-      const claim = oeuvreItem.claims["Titre de l'oeuvre"][0]
+      const item = parseNotice(sampleBNFwork).items[0]
+      item.claims["Titre de l'oeuvre"].should.be.an.Array()
+      const claim = item.claims["Titre de l'oeuvre"][0]
       claim.value.should.equal('Les rêveries du promeneur solitaire')
       claim.references.should.be.an.Array()
       const reference = claim.references[0]
@@ -96,9 +96,9 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
     })
 
     it('should return "Langue de l\'oeuvre" claims', done => {
-      const oeuvreItem = parseNotice(sampleBNFwork).items[0]
-      oeuvreItem.claims["Langue de l'oeuvre"].should.be.an.Array()
-      const claim = oeuvreItem.claims["Langue de l'oeuvre"][0]
+      const item = parseNotice(sampleBNFwork).items[0]
+      item.claims["Langue de l'oeuvre"].should.be.an.Array()
+      const claim = item.claims["Langue de l'oeuvre"][0]
       claim.value.should.equal('fre')
       claim.references.should.be.an.Array()
       const reference = claim.references[0]
