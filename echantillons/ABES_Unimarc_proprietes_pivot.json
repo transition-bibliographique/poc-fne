@@ -178,7 +178,7 @@
 					}]
 				}],
 				"P12": [{
-					"value": "<valeur de zone 240 $a>",
+					"value": "<valeur de zone 240 $t>",
 					"qualifiers": {},
 					"references": [{
 						"P2": ["unimarc_240"],
@@ -186,7 +186,7 @@
 					}]
 				}],
 				"P12a": [{
-					"value": "<valeur de zone 240 $a>",
+					"value": "<valeur de zone 240 $t>",
 					"qualifiers": {},
 					"references": [{
 						"P2": ["unimarc_240"],
