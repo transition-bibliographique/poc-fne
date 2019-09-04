@@ -7,16 +7,23 @@ const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
 const loadItems = require('../lib/load/load_items')
 const wbSdk = require('wikibase-sdk')
+const getOrLoadHardCodedProperties = require('../lib/load/get_or_load_hard_coded_properties')
+
+buildProps = (properties) => {
+  return Promise.all([
+    loadProperties(properties),
+    getOrLoadHardCodedProperties()
+  ])
+  .then(([a, b]) => Object.assign({}, a, b))
+}
 
 describe('load items on wikibase', function () {
   this.timeout(20000)
-
   it('should return a list of items', done => {
     const itemPseudoId = '.0..b.fre..Les rêveries du promeneur solitaire'
     const properties = parseProperties(sampleBNFwork)
     const { items, relations } = parseNotice(sampleBNFwork)
-
-    loadProperties(properties)
+    buildProps(properties)
       .then((wbProps) => {
         return loadItems(items, relations, wbProps)
           .then((res) => {
@@ -33,7 +40,7 @@ describe('load items on wikibase', function () {
     const properties = parseProperties(sampleBNFwork)
     const { items, relations } = parseNotice(sampleBNFwork)
 
-    loadProperties(properties)
+    buildProps(properties)
       .then((wbProps) => {
         return loadItems(items, relations, wbProps)
           .then((res) => {
@@ -52,12 +59,12 @@ describe('load items on wikibase', function () {
     const personneProperties = parseProperties(sampleABESpersonne)
     const { items: workItems, relations } = parseNotice(sampleABESwork)
     const { items: personneItems } = parseNotice(sampleABESpersonne)
-    loadProperties(workProperties)
+    buildProps(workProperties)
     .then((wbWorkProps) => {
       return loadItems(workItems, relations, wbWorkProps)
       .then((workLoadRes) => {
         const personneId = workLoadRes.relations[0].claim.mainsnak.datavalue.value.id
-        return loadProperties(personneProperties)
+        buildProps(personneProperties)
         .then((wbPersonneProps) => {
           return loadItems(personneItems, null, wbPersonneProps)
           .then((personneLoadRes) => {
@@ -76,7 +83,7 @@ describe('load items on wikibase', function () {
     const { items, relations } = parseNotice(sampleABESwork)
     const workPseudoId = relations[0].subject
     const personnePseudoId = relations[0].object
-    loadProperties(workProperties)
+    buildProps(workProperties)
     .then((wbWorkProps) => {
       return loadItems(items, relations, wbWorkProps)
       .then((workLoadRes1) => {
