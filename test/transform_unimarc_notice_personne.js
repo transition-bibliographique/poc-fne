@@ -70,8 +70,8 @@ describe('create a pseudo item from an unimarc personne', () => {
       const claim = item.claims['Nom'][0]
       claim.value.should.equal('Pasolini')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'unimarc_200',
-        'données source de la zone': '$7 ba0yba0y $9 0 $a Pasolini $b Pier Paolo $f 1922-1975'
+        'identifiant de la zone': [ 'unimarc_200' ],
+        'données source de la zone': [ '$7 ba0yba0y $9 0 $a Pasolini $b Pier Paolo $f 1922-1975' ]
       })
       done()
     })
@@ -82,8 +82,8 @@ describe('create a pseudo item from an unimarc personne', () => {
       const claim = item.claims['Prénom'][0]
       claim.value.should.equal('Pier Paolo')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'unimarc_200',
-        'données source de la zone': '$7 ba0yba0y $9 0 $a Pasolini $b Pier Paolo $f 1922-1975'
+        'identifiant de la zone': [ 'unimarc_200' ],
+        'données source de la zone': [ '$7 ba0yba0y $9 0 $a Pasolini $b Pier Paolo $f 1922-1975' ]
       })
       done()
     })
@@ -94,8 +94,8 @@ describe('create a pseudo item from an unimarc personne', () => {
       const claim = item.claims['Date de naissance'][0]
       claim.value.should.equal('1922-03-05')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'unimarc_103',
-        'données source de la zone': '$a 19220305 $b 19751102'
+        'identifiant de la zone': [ 'unimarc_103' ],
+        'données source de la zone': [ '$a 19220305 $b 19751102' ]
       })
       done()
     })
@@ -106,8 +106,8 @@ describe('create a pseudo item from an unimarc personne', () => {
       const claim = item.claims['Date de décès'][0]
       claim.value.should.equal('1975-11-02')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'unimarc_103',
-        'données source de la zone': '$a 19220305 $b 19751102'
+        'identifiant de la zone': [ 'unimarc_103' ],
+        'données source de la zone': [ '$a 19220305 $b 19751102' ]
       })
       done()
     })

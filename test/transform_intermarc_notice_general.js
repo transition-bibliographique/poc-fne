@@ -13,8 +13,8 @@ describe('intermarc common pivot property claims', () => {
     claim.references.should.be.an.Array()
     const reference = claim.references[0]
     reference.should.deepEqual({
-      'identifiant de la zone': 'intermarc_003',
-      'données source de la zone': 'http://catalogue.bnf.fr/ark:/12148/cb11935154w'
+      'identifiant de la zone': [ 'intermarc_003' ],
+      'données source de la zone': [ 'http://catalogue.bnf.fr/ark:/12148/cb11935154w' ]
     })
     done()
   })
@@ -27,8 +27,8 @@ describe('intermarc common pivot property claims', () => {
     claim.references.should.be.an.Array()
     const reference = claim.references[0]
     reference.should.deepEqual({
-      'identifiant de la zone': 'intermarc_000',
-      'données source de la zone': '00469c1 as22000272  45'
+      'identifiant de la zone': [ 'intermarc_000' ],
+      'données source de la zone': [ '00469c1 as22000272  45' ]
     })
     done()
   })
@@ -40,11 +40,11 @@ describe('intermarc common pivot property claims', () => {
     claim.value.should.equal('0000000073689743')
     claim.references.should.be.an.Array()
     claim.references[0].should.deepEqual({
-      "Source d'import": 'VIAF'
+      "Source d'import": [ 'VIAF' ]
     })
     claim.references[1].should.deepEqual({
-      'identifiant de la zone': 'intermarc_031',
-      'données source de la zone': '$a 0000000073689743 $2 VIAF $d 20130802'
+      'identifiant de la zone': [ 'intermarc_031' ],
+      'données source de la zone': [ '$a 0000000073689743 $2 VIAF $d 20130802' ]
     })
     done()
   })

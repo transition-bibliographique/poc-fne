@@ -89,8 +89,8 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
       claim.references.should.be.an.Array()
       const reference = claim.references[0]
       reference.should.deepEqual({
-        'identifiant de la zone': 'intermarc_145',
-        'données source de la zone': '$w .0..b.fre. $a Les rêveries du promeneur solitaire'
+        'identifiant de la zone': [ 'intermarc_145' ],
+        'données source de la zone': [ '$w .0..b.fre. $a Les rêveries du promeneur solitaire' ]
       })
       done()
     })
@@ -103,8 +103,8 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
       claim.references.should.be.an.Array()
       const reference = claim.references[0]
       reference.should.deepEqual({
-        'identifiant de la zone': 'intermarc_008',
-        'données source de la zone': '810213060208yyfre           1776      1778                   010'
+        'identifiant de la zone': [ 'intermarc_008' ],
+        'données source de la zone': [ '810213060208yyfre           1776      1778                   010' ]
       })
       done()
     })

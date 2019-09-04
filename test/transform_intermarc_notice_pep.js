@@ -58,8 +58,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Nom'][0]
       claim.value.should.equal('Fleming')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_100',
-        'données source de la zone': '$w 0  b $a Fleming $m Robert $d 1921-1976'
+        'identifiant de la zone': [ 'intermarc_100' ],
+        'données source de la zone': [ '$w 0  b $a Fleming $m Robert $d 1921-1976' ]
       })
       done()
     })
@@ -70,8 +70,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Prénom'][0]
       claim.value.should.equal('Robert')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_100',
-        'données source de la zone': '$w 0  b $a Fleming $m Robert $d 1921-1976'
+        'identifiant de la zone': [ 'intermarc_100' ],
+        'données source de la zone': [ '$w 0  b $a Fleming $m Robert $d 1921-1976' ]
       })
       done()
     })
@@ -82,8 +82,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Date de naissance'][0]
       claim.value.should.equal('1921-11-12')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_008',
-        'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
+        'identifiant de la zone': [ 'intermarc_008' ],
+        'données source de la zone': [ '970528101018ca   m          19211112  19761128             a 1' ]
       })
       done()
     })
@@ -94,8 +94,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Date de décès'][0]
       claim.value.should.equal('1976-11-28')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_008',
-        'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
+        'identifiant de la zone': [ 'intermarc_008' ],
+        'données source de la zone': [ '970528101018ca   m          19211112  19761128             a 1' ]
       })
       done()
     })
@@ -106,8 +106,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Activité'][0]
       claim.value.should.equal('a')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_045',
-        'données source de la zone': '$a a'
+        'identifiant de la zone': [ 'intermarc_045' ],
+        'données source de la zone': [ '$a a' ]
       })
       done()
     })

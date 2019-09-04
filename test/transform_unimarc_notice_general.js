@@ -13,8 +13,8 @@ describe('intermarc common pivot property claims', () => {
     claim.references.should.be.an.Array()
     const reference = claim.references[0]
     reference.should.deepEqual({
-      'identifiant de la zone': 'unimarc_003',
-      'données source de la zone': 'http://www.idref.fr/082349983'
+      'identifiant de la zone': [ 'unimarc_003' ],
+      'données source de la zone': [ 'http://www.idref.fr/082349983' ]
     })
     done()
   })
@@ -27,8 +27,8 @@ describe('intermarc common pivot property claims', () => {
     claim.references.should.be.an.Array()
     const reference = claim.references[0]
     reference.should.deepEqual({
-      'identifiant de la zone': 'unimarc_008',
-      'données source de la zone': 'Tu5'
+      'identifiant de la zone': [ 'unimarc_008' ],
+      'données source de la zone': [ 'Tu5' ]
     })
     done()
   })
@@ -40,11 +40,11 @@ describe('intermarc common pivot property claims', () => {
     claim.value.should.equal('0000000121334091')
     claim.references.should.be.an.Array()
     claim.references[0].should.deepEqual({
-      "Source d'import": 'BNF'
+      "Source d'import": [ 'BNF' ]
     })
     claim.references[1].should.deepEqual({
-      'identifiant de la zone': 'unimarc_010',
-      'données source de la zone': '$a 0000000121334091 $2 BNF $d 20150918'
+      'identifiant de la zone': [ 'unimarc_010' ],
+      'données source de la zone': [ '$a 0000000121334091 $2 BNF $d 20150918' ]
     })
     done()
   })
