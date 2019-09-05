@@ -50,32 +50,72 @@ describe('create a pseudo item from an intermarc pep', () => {
       done()
     })
   })
-  describe('transform leader', () => {
-    it('should return pseudo claims', done => {
-      const itemPropertyPseudoId = 'intermarc_leader'
-      const { items } = parseNotice(sampleBNFpep)
-      const item = items[0]
-      item.claims.should.be.an.Object()
 
-      item.claims[itemPropertyPseudoId].should.be.an.Array()
-      item.claims[itemPropertyPseudoId][0].should.equal('00615c0 ap22000272  45')
+  describe('pivot property claims', () => {
+    it('should return "Nom" claims', done => {
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Nom'].should.be.an.Array()
+      const claim = item.claims['Nom'][0]
+      claim.value.should.equal('Fleming')
+      claim.references[0].should.deepEqual({
+        'identifiant de la zone': 'intermarc_100',
+        'données source de la zone': '$w 0  b $a Fleming $m Robert $d 1921-1976'
+      })
       done()
     })
-  })
 
-  describe('add modelized claims', () => {
-    it('should add modelized claim', done => {
-      const { items } = parseNotice(sampleBNFpep)
-      const [ oeuvreItem ] = items
-      const pseudoPropertyId = 'intermarc_p_031'
-      oeuvreItem.claims[pseudoPropertyId].should.be.an.Array()
-      const claim = oeuvreItem.claims[pseudoPropertyId][0]
-      claim.should.be.an.Object()
-      claim.value.should.be.equal('0000000073689743')
-      claim.references.should.be.an.Array()
-      const reference = claim.references[0]
-      reference.should.be.an.Object()
-      reference['date de consultation'][0].should.equal('2013-08-02')
+    it('should return "Prénom" claims', done => {
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Prénom'].should.be.an.Array()
+      const claim = item.claims['Prénom'][0]
+      claim.value.should.equal('Robert')
+      claim.references[0].should.deepEqual({
+        'identifiant de la zone': 'intermarc_100',
+        'données source de la zone': '$w 0  b $a Fleming $m Robert $d 1921-1976'
+      })
+      done()
+    })
+
+    it('should return "Date de naissance" claims', done => {
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Date de naissance'].should.be.an.Array()
+      const claim = item.claims['Date de naissance'][0]
+      claim.value.should.equal('1921-11-12')
+      claim.references[0].should.deepEqual({
+        'identifiant de la zone': 'intermarc_008',
+        'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
+      })
+      done()
+    })
+
+    it('should return "Date de décès" claims', done => {
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Date de décès'].should.be.an.Array()
+      const claim = item.claims['Date de décès'][0]
+      claim.value.should.equal('1976-11-28')
+      claim.references[0].should.deepEqual({
+        'identifiant de la zone': 'intermarc_008',
+        'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
+      })
+      done()
+    })
+
+    it('should return "Activité" claims', done => {
+      const item = parseNotice(sampleBNFpep).items[0]
+      item.claims['Activité'].should.be.an.Array()
+      const claim = item.claims['Activité'][0]
+      claim.value.should.equal('a')
+      claim.references[0].should.deepEqual({
+        'identifiant de la zone': 'intermarc_045',
+        'données source de la zone': '$a a'
+      })
+      done()
+    })
+
+    it('should not return non-pep type specific claims', done => {
+      const item = parseNotice(sampleBNFpep).items[0]
+      should(item.claims["Titre de l'oeuvre"]).not.be.ok()
+      should(item.claims["Langue de l'oeuvre"]).not.be.ok()
       done()
     })
   })

@@ -43,8 +43,7 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
   describe('transform datafield', () => {
     it('should return a pseudo item id', done => {
       const itemId = '.0..b.fre..Les rêveries du promeneur solitaire'
-      const { items } = parseNotice(sampleBNFwork)
-      const item = items[0]
+      const item = parseNotice(sampleBNFwork).items[0]
       item.should.be.an.Object()
       item.pseudoId.should.equal(itemId)
       item.labels.fr.should.equal(itemId)
@@ -60,22 +59,10 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
   describe('transform datacontrol', () => {
     it('should return pseudo claims', done => {
       const itemPropertyPseudoId = 'intermarc_001'
-      const { items } = parseNotice(sampleBNFwork)
-      const item = items[0]
+      const item = parseNotice(sampleBNFwork).items[0]
       item.claims.should.be.an.Object()
       item.claims[itemPropertyPseudoId].should.be.an.Array()
       item.claims[itemPropertyPseudoId][0].should.equal('FRBNF119351548')
-      done()
-    })
-  })
-  describe('transform leader', () => {
-    it('should return pseudo claims', done => {
-      const itemPropertyPseudoId = 'intermarc_leader'
-      const { items } = parseNotice(sampleBNFwork)
-      const item = items[0]
-      item.claims.should.be.an.Object()
-      item.claims[itemPropertyPseudoId].should.be.an.Array()
-      item.claims[itemPropertyPseudoId][0].should.equal('00469c1 as22000272  45')
       done()
     })
   })
@@ -89,6 +76,46 @@ describe('create a pseudo item from an intermarc oeuvre', () => {
       relations[0].subject.should.equal(oeuvreItem.pseudoId)
       relations[0].property.should.equal('intermarc_s_100')
       relations[0].object.should.equal(pepPseudoId)
+      done()
+    })
+  })
+
+  describe('pivot property claims', () => {
+    it('should return "Titre de l\'oeuvre" claims', done => {
+      const item = parseNotice(sampleBNFwork).items[0]
+      item.claims["Titre de l'oeuvre"].should.be.an.Array()
+      const claim = item.claims["Titre de l'oeuvre"][0]
+      claim.value.should.equal('Les rêveries du promeneur solitaire')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.deepEqual({
+        'identifiant de la zone': 'intermarc_145',
+        'données source de la zone': '$w .0..b.fre. $a Les rêveries du promeneur solitaire'
+      })
+      done()
+    })
+
+    it('should return "Langue de l\'oeuvre" claims', done => {
+      const item = parseNotice(sampleBNFwork).items[0]
+      item.claims["Langue de l'oeuvre"].should.be.an.Array()
+      const claim = item.claims["Langue de l'oeuvre"][0]
+      claim.value.should.equal('fre')
+      claim.references.should.be.an.Array()
+      const reference = claim.references[0]
+      reference.should.deepEqual({
+        'identifiant de la zone': 'intermarc_008',
+        'données source de la zone': '810213060208yyfre           1776      1778                   010'
+      })
+      done()
+    })
+
+    it('should not return non-oeuvre type specific claims', done => {
+      const item = parseNotice(sampleBNFwork).items[0]
+      should(item.claims['Nom']).not.be.ok()
+      should(item.claims['Prénom']).not.be.ok()
+      should(item.claims['Date de naissance']).not.be.ok()
+      should(item.claims['Date de décès']).not.be.ok()
+      should(item.claims['Activité']).not.be.ok()
       done()
     })
   })
