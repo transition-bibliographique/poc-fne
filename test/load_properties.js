@@ -19,13 +19,13 @@ describe('load properties on wikibase', function () {
       .catch(done)
   })
 
-  it('should not create an property that already exists', done => {
+  it('should not create a property that already exists', done => {
     const properties = parseProperties(sampleBNFpep)
     const pseudoPropertyId = Object.keys(properties)[0]
     loadProperties(properties)
       .then((res1) => {
         const propertyId = res1[pseudoPropertyId].id
-        loadProperties(properties)
+        return loadProperties(properties)
           .then((res2) => {
             res2[pseudoPropertyId].id.should.equal(propertyId)
             done()

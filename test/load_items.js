@@ -1,9 +1,12 @@
 require('should')
 const sampleBNFwork = require('./fixtures/sample_BNF_work.json')
+const sampleABESwork = require('./fixtures/sample_ABES_work.json')
+const sampleABESpersonne = require('./fixtures/sample_ABES_personne.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
 const loadItems = require('../lib/load/load_items')
+const wbSdk = require('wikibase-sdk')
 
 describe('load items on wikibase', function () {
   this.timeout(20000)
@@ -27,7 +30,6 @@ describe('load items on wikibase', function () {
   })
 
   it('should return a list of items with relations', done => {
-    const relationProperty = 'interxmarc_s_100'
     const properties = parseProperties(sampleBNFwork)
     const { items, relations } = parseNotice(sampleBNFwork)
 
@@ -43,5 +45,54 @@ describe('load items on wikibase', function () {
           })
       })
       .catch(done)
+  })
+
+  it('should enrich a pre-existing item', done => {
+    const workProperties = parseProperties(sampleABESwork)
+    const personneProperties = parseProperties(sampleABESpersonne)
+    const { items: workItems, relations } = parseNotice(sampleABESwork)
+    const { items: personneItems } = parseNotice(sampleABESpersonne)
+    loadProperties(workProperties)
+    .then((wbWorkProps) => {
+      return loadItems(workItems, relations, wbWorkProps)
+      .then((workLoadRes) => {
+        const personneId = workLoadRes.relations[0].claim.mainsnak.datavalue.value.id
+        return loadProperties(personneProperties)
+        .then((wbPersonneProps) => {
+          return loadItems(personneItems, null, wbPersonneProps)
+          .then((personneLoadRes) => {
+            const personneItem = Object.values(personneLoadRes.entities)[0]
+            personneItem.id.should.equal(personneId)
+            done()
+          })
+        })
+      })
+    })
+    .catch(done)
+  })
+
+  it('should not re-create existing relations', done => {
+    const workProperties = parseProperties(sampleABESwork)
+    const { items, relations } = parseNotice(sampleABESwork)
+    const workPseudoId = relations[0].subject
+    const personnePseudoId = relations[0].object
+    loadProperties(workProperties)
+    .then((wbWorkProps) => {
+      return loadItems(items, relations, wbWorkProps)
+      .then((workLoadRes1) => {
+        return loadItems(items, relations, wbWorkProps)
+        .then((workLoadRes2) => {
+          const relationPropertyId = workLoadRes2.relations[0].claim.mainsnak.property
+          const wbItems = Object.values(workLoadRes2.entities)
+          const workItem = wbItems.find((item) => item.labels.en.value === workPseudoId)
+          const personneItem = wbItems.find((item) => item.labels.en.value === personnePseudoId)
+          // Simplify claims individually to avoid having wbSdk.simplify.claims perform a uniq on the values
+          const relationClaims = workItem.claims[relationPropertyId].map(wbSdk.simplify.claim)
+          relationClaims.should.deepEqual([ personneItem.id ])
+          done()
+        })
+      })
+    })
+    .catch(done)
   })
 })
