@@ -1,0 +1,729 @@
+{
+  "format": "INTERMARC",
+  "id": "ark:/12148/cb11914476c",
+  "type": "Authority",
+  "leader": "01991c0 ap22000272  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "FRBNF11914476X"
+    },
+    {
+      "tag": "003",
+      "$t": "http://catalogue.bnf.fr/ark:/12148/cb11914476c"
+    },
+    {
+      "tag": "008",
+      "$t": "800118111114xxlatm          01210426  01800317             a 010"
+    }
+  ],
+  "datafield": [
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "031",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "000000011031946X"
+        },
+        {
+          "code": "2",
+          "$t": "VIAF"
+        },
+        {
+          "code": "d",
+          "$t": "20130724"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "045",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "a"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "100",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": ".1..b.fre."
+        },
+        {
+          "code": "a",
+          "$t": "Marc Aurèle"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "100",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": ".0..b.lat."
+        },
+        {
+          "code": "a",
+          "$t": "Marcus Aurelius Antoninus"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "320",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "15049733"
+        },
+        {
+          "code": "9",
+          "$t": "167"
+        },
+        {
+          "code": "w",
+          "$t": ".  .b....."
+        },
+        {
+          "code": "a",
+          "$t": "Rome"
+        },
+        {
+          "code": "z",
+          "$t": "+* 0161......- 0180......+:161-180:"
+        },
+        {
+          "code": "g",
+          "$t": "Marc Aurèle"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....b.fre."
+        },
+        {
+          "code": "a",
+          "$t": "Marc-Antonin"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....b.fre."
+        },
+        {
+          "code": "a",
+          "$t": "Marc-Aurèle Antonin"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....b.lat."
+        },
+        {
+          "code": "a",
+          "$t": "Marcus Antoninus"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....bagrm."
+        },
+        {
+          "code": "a",
+          "$t": "Márkos 'Antōninos"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....g.grp."
+        },
+        {
+          "code": "a",
+          "$t": "Μάρκος Ἀυρήλιος"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....bagrp."
+        },
+        {
+          "code": "a",
+          "$t": "Mârkos 'Aurī́lios"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....bugrp."
+        },
+        {
+          "code": "a",
+          "$t": "Mârkos 'Aurḗlios"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....b....."
+        },
+        {
+          "code": "a",
+          "$t": "Marco Aurelio"
+        },
+        {
+          "code": "d",
+          "$t": "0121-0180"
+        },
+        {
+          "code": "e",
+          "$t": "empereur romain"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "600",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "A aussi écrit en grec"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "600",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Empereur romain"
+        },
+        {
+          "code": "a",
+          "$t": "Philosophe stoïcien"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "603",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Rome"
+        },
+        {
+          "code": "b",
+          "$t": "Vienne (Autriche)"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Marci Aurelii Antonini ad se ipsum Libri XII / ed. Joachim Dalfen, 1987"
+        },
+        {
+          "code": "a",
+          "$t": "Pensées de Marc-Aurèle Antonin / nouvelle traduction du grec par Mr de Joly, 1769"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "GDEL"
+        },
+        {
+          "code": "a",
+          "$t": "Clavis SGL : Marcus Aurelius. Marcus Annius Aurelius Antoninus Imperator"
+        },
+        {
+          "code": "a",
+          "$t": "Encycl. Grèce : en polytonique"
+        },
+        {
+          "code": "a",
+          "$t": "Encycl. Papyros : en monotonique"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "BN Cat. gén. : Marc-Aurèle"
+        },
+        {
+          "code": "a",
+          "$t": "BN Cat. gén. 1960-1969 : Marcus Aurelius"
+        },
+        {
+          "code": "a",
+          "$t": "BN Service grec"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "624",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "100"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "624",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "930"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "907",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "GEA"
+        },
+        {
+          "code": "a",
+          "$t": "000402853"
+        },
+        {
+          "code": "b",
+          "$t": "APP"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "907",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "GEA"
+        },
+        {
+          "code": "a",
+          "$t": "000687313"
+        },
+        {
+          "code": "b",
+          "$t": "AMA"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPL"
+        },
+        {
+          "code": "a",
+          "$t": "001079730"
+        },
+        {
+          "code": "b",
+          "$t": "APP"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPL"
+        },
+        {
+          "code": "a",
+          "$t": "001697577"
+        },
+        {
+          "code": "b",
+          "$t": "AMA"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPB"
+        },
+        {
+          "code": "a",
+          "$t": "100137810"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPB"
+        },
+        {
+          "code": "a",
+          "$t": "100471070"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14332498"
+        },
+        {
+          "code": "d",
+          "$t": "20060718"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14768436"
+        },
+        {
+          "code": "d",
+          "$t": "20060718"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14332500"
+        },
+        {
+          "code": "d",
+          "$t": "20060718"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14332499"
+        },
+        {
+          "code": "d",
+          "$t": "20060718"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14332497"
+        },
+        {
+          "code": "d",
+          "$t": "20060718"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "15143571"
+        },
+        {
+          "code": "d",
+          "$t": "20080709"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "15475139"
+        },
+        {
+          "code": "d",
+          "$t": "20111114"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "15475138"
+        },
+        {
+          "code": "d",
+          "$t": "20111114"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "15475129"
+        },
+        {
+          "code": "d",
+          "$t": "20111114"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14332549"
+        },
+        {
+          "code": "d",
+          "$t": "20111114"
+        }
+      ]
+    }
+  ]
+}
