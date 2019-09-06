@@ -7,12 +7,12 @@ const parseNotice = require('../lib/transform/parse_notice')
 const loadProperties = require('../lib/load/load_properties')
 const loadItems = require('../lib/load/load_items')
 const wbSdk = require('wikibase-sdk')
-const getOrLoadHardCodedProperties = require('../lib/load/get_or_load_hard_coded_properties')
+const getOrLoadHardCodedEntities = require('../lib/load/get_or_load_hard_coded_entities')
 
 buildProps = (properties) => {
   return Promise.all([
     loadProperties(properties),
-    getOrLoadHardCodedProperties()
+    getOrLoadHardCodedEntities().then((res) => res.properties)
   ])
   .then(([a, b]) => Object.assign({}, a, b))
 }
