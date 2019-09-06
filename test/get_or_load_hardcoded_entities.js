@@ -23,7 +23,6 @@ describe('get_or_load_hard_coded_entities', function () {
     getOrLoadHardCodedEntities()
     .then(({ items, properties }) => {
       const hardCodedItem = items[hardCodedItemPseudoId]
-      const typePropertyId = properties["Type d'entité"].id
       hardCodedItem.should.be.an.Object()
       should(hardCodedItem.datatype).not.be.ok()
       hardCodedItem.pseudoId.should.equal(hardCodedItemPseudoId)
