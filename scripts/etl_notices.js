@@ -33,6 +33,37 @@ const extractIfMissing = (noticesDumpPath, jsonNoticePath) => (err) => {
   }
 }
 
+const transformAndLoadSequentially = (notices) => {
+  const responses = []
+  const totalNotices = notices.length
+  var loaded = 0
+
+  const logCount = () => {
+    console.log('loaded', `${loaded}/${totalNotices}`)
+  }
+
+  const transformAndLoadNextNotice = () => {
+    const nextNotice = notices.shift()
+    if (!nextNotice) {
+      logCount()
+      return responses
+    }
+    return transformAndLoadNotice(nextNotice)
+    .then((res) => {
+      responses.push(res)
+      loaded += 1
+      if (loaded % 50 === 0) logCount()
+    })
+    .catch((err) => {
+      console.error('failing notice', JSON.stringify(nextNotice, null, 2))
+      throw err
+    })
+    .then(transformAndLoadNextNotice)
+  }
+
+  return transformAndLoadNextNotice()
+}
+
 const getIdsMap = (responses) => {
   return responses.reduce((obj, res) => {
     Object.keys(res.entities).forEach(entityId => {
@@ -45,9 +76,7 @@ const getIdsMap = (responses) => {
 
 Promise.all(noticesDumpPaths.map(getAndExtractNotices))
 .then(flatten)
-.then((notices) => {
-  return Promise.all(notices.map(transformAndLoadNotice))
-})
+.then(transformAndLoadSequentially)
 .then((responses) => {
   const idsMap = getIdsMap(responses)
   console.log('loaded', JSON.stringify(idsMap, null, 2))
