@@ -55,7 +55,7 @@ const transformAndLoadSequentially = (notices) => {
       if (loaded % 50 === 0) logCount()
     })
     .catch((err) => {
-      console.error('failing notice', JSON.stringify(nextNotice, null, 2))
+      console.error('failing notice', JSON.stringify(nextNotice, null, 2), err)
       throw err
     })
     .then(transformAndLoadNextNotice)
