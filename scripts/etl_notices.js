@@ -2,8 +2,13 @@
 const path = require('path')
 const extract = require('../lib/extract/extract')
 const transformAndLoadNotice = require('../lib/transform_and_load_notice')
+const parseProperties = require('../lib/transform/parse_properties')
+const parseNotice = require('../lib/transform/parse_notice')
+const getContextEntities = require('../lib/load/get_context_entities')
+const loadItems = require('../lib/load/load_items')
 const { readFile } = require('../lib/fs')
 const { flatten } = require('lodash')
+const { red } = require('chalk')
 
 const noticesDumpPaths = process.argv.slice(2)
   .filter(noticesDumpPath => noticesDumpPath.match(/\.xml$/))
@@ -33,52 +38,58 @@ const extractIfMissing = (noticesDumpPath, jsonNoticePath) => (err) => {
   }
 }
 
-const transformAndLoadSequentially = (notices) => {
-  const responses = []
-  const totalNotices = notices.length
-  var loaded = 0
-
-  const logCount = () => {
-    console.log('loaded', `${loaded}/${totalNotices}`)
+const transformNotice = (notice) => {
+  try {
+    const properties = parseProperties(notice)
+    const { items, relations } = parseNotice(notice)
+    return { items, relations, properties }
+  } catch (err) {
+    return { error: err }
   }
-
-  const transformAndLoadNextNotice = () => {
-    const nextNotice = notices.shift()
-    if (!nextNotice) {
-      logCount()
-      return responses
-    }
-    return transformAndLoadNotice(nextNotice)
-    .then((res) => {
-      responses.push(res)
-      loaded += 1
-      if (loaded % 50 === 0) logCount()
-    })
-    .catch((err) => {
-      console.error('failing notice', JSON.stringify(nextNotice, null, 2), err)
-      throw err
-    })
-    .then(transformAndLoadNextNotice)
-  }
-
-  return transformAndLoadNextNotice()
 }
 
-const getIdsMap = (responses) => {
-  return responses.reduce((obj, res) => {
-    Object.keys(res.entities).forEach(entityId => {
-      const pseudoId = res.entities[entityId].labels.en.value
-      obj[entityId] = pseudoId
+const transformNotices = (notices) => {
+  return notices
+    .map(transformNotice)
+    .reduce((results, nextResult) => {
+      if (nextResult.error) {
+        results.errors.push(nextResult.error)
+      } else {
+        results.items.push(...nextResult.items)
+        results.relations.push(...nextResult.relations)
+        Object.assign(results.properties, nextResult.properties)
+      }
+      return results
+    }, { items: [], relations: [], properties: {}, errors: [] })
+}
+
+const loadNotices = ({ items, relations, properties, errors }) => {
+  if (errors.length > 0) {
+    console.error(red('transform errors:'))
+    errors.forEach((err) => {
+      console.error(red(err.message), JSON.stringify(err.context))
     })
-    return obj
+    return { entities: {} }
+  } else {
+    console.log('no transform errors: loading')
+    return getContextEntities(properties)
+      .then((contextEntities) => loadItems(items, relations, contextEntities))
+  }
+}
+
+const getIdsMap = (res) => {
+  return Object.values(res.entities).reduce((idsMap, entity) => {
+    idsMap[entity.id] = entity.labels.en.value
+    return idsMap
   }, {})
 }
 
 Promise.all(noticesDumpPaths.map(getAndExtractNotices))
 .then(flatten)
-.then(transformAndLoadSequentially)
-.then((responses) => {
-  const idsMap = getIdsMap(responses)
+.then(transformNotices)
+.then(loadNotices)
+.then((res) => {
+  const idsMap = getIdsMap(res)
   console.log('loaded', JSON.stringify(idsMap, null, 2))
 })
 .catch(console.error)
