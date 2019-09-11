@@ -60,7 +60,7 @@ const transformNotices = (notices) => {
 
   if (errors.length > 0) {
     errors.forEach((err) => {
-      console.error(red(err.message), JSON.stringify(err.context))
+      console.error(red(err.message), JSON.stringify(err.context, null, 2))
     })
     throw new Error('there are transform errors')
   } else {
