@@ -2,8 +2,7 @@ require('should')
 const sampleBNFpep = require('./fixtures/sample_BNF_pep.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
-const loadProperties = require('../lib/load/load_properties')
-const getOrLoadHardCodedProperties = require('../lib/load/get_or_load_hard_coded_properties')
+const getContextEntities = require('../lib/load/get_context_entities')
 const loadItem = require('../lib/load/load_item')
 
 describe('load item on wikibase', function () {
@@ -15,13 +14,9 @@ describe('load item on wikibase', function () {
     const { items } = parseNotice(sampleBNFpep)
     const item = items[0]
 
-    Promise.all([
-      loadProperties(properties),
-      getOrLoadHardCodedProperties()
-    ])
-      .then(([a, b]) => Object.assign({}, a, b))
-      .then((wbProps) => {
-        return loadItem(item, wbProps)
+    getContextEntities(properties)
+      .then((contextEntities) => {
+        return loadItem(item, contextEntities)
           .then((res) => {
             res.should.be.an.Object()
             res.pseudoId.should.equal(itemPseudoId)

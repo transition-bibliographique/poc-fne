@@ -21,7 +21,6 @@ const parseRecords = (jsonNoticePath) => (buf) => {
   const ndjson = buf.toString()
   return ndjson
     .split('\n')
-    .slice(0, 1)
     .map(JSON.parse)
 }
 

@@ -103,8 +103,8 @@ describe('create a pseudo item from an unimarc oeuvre', () => {
       claim.references.should.be.an.Array()
       const reference = claim.references[0]
       reference.should.deepEqual({
-        'identifiant de la zone': 'unimarc_240',
-        'données source de la zone': '$7 ba0yba0y $a Apollinaire, Guillaume (1880-1918) $t Alcools'
+        'identifiant de la zone': [ 'unimarc_240' ],
+        'données source de la zone': [ '$7 ba0yba0y $a Apollinaire, Guillaume (1880-1918) $t Alcools' ]
       })
       done()
     })
@@ -117,8 +117,8 @@ describe('create a pseudo item from an unimarc oeuvre', () => {
       claim.references.should.be.an.Array()
       const reference = claim.references[0]
       reference.should.deepEqual({
-        'identifiant de la zone': 'unimarc_230',
-        'données source de la zone': '$7 ba0yba0y $8 freita $9 0 $a Il Decameron $n film'
+        'identifiant de la zone': [ 'unimarc_230' ],
+        'données source de la zone': [ '$7 ba0yba0y $8 freita $9 0 $a Il Decameron $n film' ]
       })
       done()
     })
@@ -131,8 +131,8 @@ describe('create a pseudo item from an unimarc oeuvre', () => {
       claim.references.should.be.an.Array()
       const reference = claim.references[0]
       reference.should.deepEqual({
-        'identifiant de la zone': 'unimarc_101',
-        'données source de la zone': '$a ita'
+        'identifiant de la zone': [ 'unimarc_101' ],
+        'données source de la zone': [ '$a ita' ]
       })
       done()
     })

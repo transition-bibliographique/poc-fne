@@ -4,21 +4,19 @@ const sampleABESwork = require('./fixtures/sample_ABES_work.json')
 const sampleABESpersonne = require('./fixtures/sample_ABES_personne.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
-const loadProperties = require('../lib/load/load_properties')
 const loadItems = require('../lib/load/load_items')
 const wbSdk = require('wikibase-sdk')
+const getContextEntities = require('../lib/load/get_context_entities')
 
 describe('load items on wikibase', function () {
   this.timeout(20000)
-
   it('should return a list of items', done => {
     const itemPseudoId = '.0..b.fre..Les rêveries du promeneur solitaire'
     const properties = parseProperties(sampleBNFwork)
     const { items, relations } = parseNotice(sampleBNFwork)
-
-    loadProperties(properties)
-      .then((wbProps) => {
-        return loadItems(items, relations, wbProps)
+    getContextEntities(properties)
+      .then((contextEntities) => {
+        return loadItems(items, relations, contextEntities)
           .then((res) => {
             const entities = Object.values(res.entities)
             const item = entities[0]
@@ -33,9 +31,9 @@ describe('load items on wikibase', function () {
     const properties = parseProperties(sampleBNFwork)
     const { items, relations } = parseNotice(sampleBNFwork)
 
-    loadProperties(properties)
-      .then((wbProps) => {
-        return loadItems(items, relations, wbProps)
+    getContextEntities(properties)
+      .then((contextEntities) => {
+        return loadItems(items, relations, contextEntities)
           .then((res) => {
             const oeuvreId = res.relations[0].claim.id.split('$')[0]
             const pepId = res.relations[0].claim.mainsnak.datavalue.value.id
@@ -52,12 +50,12 @@ describe('load items on wikibase', function () {
     const personneProperties = parseProperties(sampleABESpersonne)
     const { items: workItems, relations } = parseNotice(sampleABESwork)
     const { items: personneItems } = parseNotice(sampleABESpersonne)
-    loadProperties(workProperties)
-    .then((wbWorkProps) => {
-      return loadItems(workItems, relations, wbWorkProps)
+    getContextEntities(workProperties)
+    .then((contextEntities) => {
+      return loadItems(workItems, relations, contextEntities)
       .then((workLoadRes) => {
         const personneId = workLoadRes.relations[0].claim.mainsnak.datavalue.value.id
-        return loadProperties(personneProperties)
+        getContextEntities(personneProperties)
         .then((wbPersonneProps) => {
           return loadItems(personneItems, null, wbPersonneProps)
           .then((personneLoadRes) => {
@@ -76,11 +74,11 @@ describe('load items on wikibase', function () {
     const { items, relations } = parseNotice(sampleABESwork)
     const workPseudoId = relations[0].subject
     const personnePseudoId = relations[0].object
-    loadProperties(workProperties)
-    .then((wbWorkProps) => {
-      return loadItems(items, relations, wbWorkProps)
+    getContextEntities(workProperties)
+    .then((contextEntities) => {
+      return loadItems(items, relations, contextEntities)
       .then((workLoadRes1) => {
-        return loadItems(items, relations, wbWorkProps)
+        return loadItems(items, relations, contextEntities)
         .then((workLoadRes2) => {
           const relationPropertyId = workLoadRes2.relations[0].claim.mainsnak.property
           const wbItems = Object.values(workLoadRes2.entities)

@@ -1,5 +1,6 @@
 require('should')
 const sampleBNFpep = require('./fixtures/sample_BNF_pep.json')
+const sampleBNFpepSansPrenom = require('./fixtures/sample_BNF_pep_sans_prénom.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
@@ -58,8 +59,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Nom'][0]
       claim.value.should.equal('Fleming')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_100',
-        'données source de la zone': '$w 0  b $a Fleming $m Robert $d 1921-1976'
+        'identifiant de la zone': [ 'intermarc_100' ],
+        'données source de la zone': [ '$w 0  b $a Fleming $m Robert $d 1921-1976' ]
       })
       done()
     })
@@ -70,8 +71,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Prénom'][0]
       claim.value.should.equal('Robert')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_100',
-        'données source de la zone': '$w 0  b $a Fleming $m Robert $d 1921-1976'
+        'identifiant de la zone': [ 'intermarc_100' ],
+        'données source de la zone': [ '$w 0  b $a Fleming $m Robert $d 1921-1976' ]
       })
       done()
     })
@@ -82,8 +83,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Date de naissance'][0]
       claim.value.should.equal('1921-11-12')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_008',
-        'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
+        'identifiant de la zone': [ 'intermarc_008' ],
+        'données source de la zone': [ '970528101018ca   m          19211112  19761128             a 1' ]
       })
       done()
     })
@@ -94,8 +95,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Date de décès'][0]
       claim.value.should.equal('1976-11-28')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_008',
-        'données source de la zone': '970528101018ca   m          19211112  19761128             a 1'
+        'identifiant de la zone': [ 'intermarc_008' ],
+        'données source de la zone': [ '970528101018ca   m          19211112  19761128             a 1' ]
       })
       done()
     })
@@ -106,8 +107,8 @@ describe('create a pseudo item from an intermarc pep', () => {
       const claim = item.claims['Activité'][0]
       claim.value.should.equal('a')
       claim.references[0].should.deepEqual({
-        'identifiant de la zone': 'intermarc_045',
-        'données source de la zone': '$a a'
+        'identifiant de la zone': [ 'intermarc_045' ],
+        'données source de la zone': [ '$a a' ]
       })
       done()
     })
@@ -116,6 +117,12 @@ describe('create a pseudo item from an intermarc pep', () => {
       const item = parseNotice(sampleBNFpep).items[0]
       should(item.claims["Titre de l'oeuvre"]).not.be.ok()
       should(item.claims["Langue de l'oeuvre"]).not.be.ok()
+      done()
+    })
+
+    it('should ignore a missing field or subfield', done => {
+      const item = parseNotice(sampleBNFpepSansPrenom).items[0]
+      should(item.claims['Prénom']).not.be.ok()
       done()
     })
   })
