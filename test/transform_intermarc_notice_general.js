@@ -2,6 +2,7 @@ require('should')
 const sampleBNFwork = require('./fixtures/sample_BNF_work.json')
 const sampleBNFpep = require('./fixtures/sample_BNF_pep.json')
 const parseNotice = require('../lib/transform/parse_notice')
+const sampleBnfNomGeographique = require('./fixtures/sample_BNF_nom_geographique.json')
 
 describe('intermarc common pivot property claims', () => {
   it('should return "URL pérenne" claims', done => {
@@ -46,5 +47,14 @@ describe('intermarc common pivot property claims', () => {
       'données source de la zone': [ '$a 0000000073689743 $2 VIAF $d 20130802' ]
     })
     done()
+  })
+
+  describe('other types', () => {
+    it('should parse ambiguous types', done => {
+      const item = parseNotice(sampleBnfNomGeographique).items[0]
+      item.pseudoId.should.equal('....b......Paititi')
+      item.claims["Type d'entité"][0].value.should.equal('lieu')
+      done()
+    })
   })
 })

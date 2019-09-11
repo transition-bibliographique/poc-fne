@@ -51,16 +51,23 @@ const transformNotice = (notice) => {
 const transformNotices = (notices) => {
   return notices
     .map(transformNotice)
-    .reduce((results, nextResult) => {
-      if (nextResult.error) {
-        results.errors.push(nextResult.error)
-      } else {
-        results.items.push(...nextResult.items)
-        results.relations.push(...nextResult.relations)
-        Object.assign(results.properties, nextResult.properties)
-      }
-      return results
-    }, { items: [], relations: [], properties: {}, errors: [] })
+    .reduce(aggregateTransformResults, {
+      items: [],
+      relations: [],
+      properties: {},
+      errors: []
+    })
+}
+
+const aggregateTransformResults = (results, nextResult) => {
+  if (nextResult.error) {
+    results.errors.push(nextResult.error)
+  } else {
+    results.items.push(...nextResult.items)
+    results.relations.push(...nextResult.relations)
+    Object.assign(results.properties, nextResult.properties)
+  }
+  return results
 }
 
 const loadNotices = ({ items, relations, properties, errors }) => {
