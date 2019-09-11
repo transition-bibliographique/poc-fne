@@ -49,7 +49,7 @@ const transformNotice = (notice) => {
 }
 
 const transformNotices = (notices) => {
-  return notices
+  const { items, relations, properties, errors } = notices
     .map(transformNotice)
     .reduce(aggregateTransformResults, {
       items: [],
@@ -57,6 +57,16 @@ const transformNotices = (notices) => {
       properties: {},
       errors: []
     })
+
+  if (errors.length > 0) {
+    errors.forEach((err) => {
+      console.error(red(err.message), JSON.stringify(err.context))
+    })
+    throw new Error('there are transform errors')
+  } else {
+    console.log('no transform errors')
+    return { items, relations, properties }
+  }
 }
 
 const aggregateTransformResults = (results, nextResult) => {
@@ -70,18 +80,9 @@ const aggregateTransformResults = (results, nextResult) => {
   return results
 }
 
-const loadNotices = ({ items, relations, properties, errors }) => {
-  if (errors.length > 0) {
-    console.error(red('transform errors:'))
-    errors.forEach((err) => {
-      console.error(red(err.message), JSON.stringify(err.context))
-    })
-    return { entities: {} }
-  } else {
-    console.log('no transform errors: loading')
-    return getContextEntities(properties)
-      .then((contextEntities) => loadItems(items, relations, contextEntities))
-  }
+const loadNotices = ({ items, relations, properties }) => {
+  return getContextEntities(properties)
+    .then((contextEntities) => loadItems(items, relations, contextEntities))
 }
 
 const getIdsMap = (res) => {
