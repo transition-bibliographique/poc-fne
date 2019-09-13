@@ -7,7 +7,7 @@ const parseNotice = require('../lib/transform/parse_notice')
 describe('create pseudo properties from an unimarc oeuvre', () => {
   describe('transform datafield', () => {
     it('should return an object of pseudo properties', done => {
-      const propertyId = 'unimarc_035_a_0'
+      const propertyId = 'unimarc_035_0_a_0'
       const properties = parseProperties(sampleABESwork)
       properties.should.be.an.Object()
       const propertiesList = Object.keys(properties)
