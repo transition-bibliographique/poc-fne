@@ -3,5 +3,6 @@ module.exports = {
   credentials: {
     username: 'admin',
     password: 'adminpass'
-  }
+  },
+  maxlag: 2
 }
