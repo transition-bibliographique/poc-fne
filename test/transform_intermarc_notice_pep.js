@@ -1,6 +1,7 @@
 require('should')
 const sampleBNFpep = require('./fixtures/sample_BNF_pep.json')
 const sampleBNFpepSansPrenom = require('./fixtures/sample_BNF_pep_sans_prénom.json')
+const sampleBnfPepAvecDateIncertaine = require('./fixtures/sample_BNF_pep_avec_date_incertaine.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
@@ -123,6 +124,12 @@ describe('create a pseudo item from an intermarc pep', () => {
     it('should ignore a missing field or subfield', done => {
       const item = parseNotice(sampleBNFpepSansPrenom).items[0]
       should(item.claims['Prénom']).not.be.ok()
+      done()
+    })
+
+    it('should ignore a missing field or subfield', done => {
+      const item = parseNotice(sampleBnfPepAvecDateIncertaine).items[0]
+      item.claims['Date de naissance'][0].value.should.equal('1793')
       done()
     })
   })
