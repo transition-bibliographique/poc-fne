@@ -134,9 +134,9 @@ describe('create a pseudo item from an intermarc pep', () => {
       done()
     })
 
-    it('should parse approximative dates', done => {
+    it('should not include empty values', done => {
       const item = parseNotice(sampleBnfPepAvecDateApproximative).items[0]
-      item.claims['Date de naissance'][0].value.time.should.equal('1900')
+      should(item.claims['Date de décès']).not.be.ok()
       done()
     })
   })
