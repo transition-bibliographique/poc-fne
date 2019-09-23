@@ -11,22 +11,22 @@ const { flatten } = require('lodash')
 const { red } = require('chalk')
 
 const noticesDumpPaths = process.argv.slice(2)
-  .filter(noticesDumpPath => noticesDumpPath.match(/\.xml$/))
+  .filter(noticesDumpPath => noticesDumpPath.match(/\.(xml|ndjson)$/))
   .map(noticesDumpPath => path.resolve(noticesDumpPath))
 
 const getAndExtractNotices = (noticesDumpPath) => {
   const jsonNoticePath = noticesDumpPath.replace(/\.xml/, '.ndjson')
+
   return readFile(jsonNoticePath)
     .then(parseRecords(jsonNoticePath))
     .catch(extractIfMissing(noticesDumpPath, jsonNoticePath))
 }
 
 const parseRecords = (jsonNoticePath) => (buf) => {
-  console.log('already exist', jsonNoticePath)
-  const ndjson = buf.toString()
-  return ndjson
-    .split('\n')
-    .map(JSON.parse)
+  const ndjson = buf.toString().trim()
+  const lines = ndjson.split('\n')
+  console.log(jsonNoticePath, 'number of records:', lines.length)
+  return lines.map(JSON.parse)
 }
 
 const extractIfMissing = (noticesDumpPath, jsonNoticePath) => (err) => {
