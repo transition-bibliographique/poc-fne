@@ -1,0 +1,287 @@
+{
+  "format": "INTERMARC",
+  "id": "ark:/12148/cb14402504n",
+  "type": "Authority",
+  "leader": "01001c1 ap2200027   45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "FRBNF144025045"
+    },
+    {
+      "tag": "003",
+      "$t": "http://catalogue.bnf.fr/ark:/12148/cb14402504n"
+    },
+    {
+      "tag": "008",
+      "$t": "020402090703frfrem          19650108  ....                 a 010"
+    }
+  ],
+  "datafield": [
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "031",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0000000055181962"
+        },
+        {
+          "code": "2",
+          "$t": "ISNI"
+        },
+        {
+          "code": "d",
+          "$t": "20170818"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "045",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "a"
+        },
+        {
+          "code": "a",
+          "$t": "i"
+        },
+        {
+          "code": "a",
+          "$t": "p"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "100",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": ".0..b....."
+        },
+        {
+          "code": "a",
+          "$t": "Obispo"
+        },
+        {
+          "code": "m",
+          "$t": "Pascal"
+        },
+        {
+          "code": "d",
+          "$t": "1965-...."
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "400",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "2b"
+        },
+        {
+          "code": "a",
+          "$t": "Captain Samouraï Flower"
+        },
+        {
+          "code": "d",
+          "$t": "1965-...."
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "511",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "14513956"
+        },
+        {
+          "code": "w",
+          "$t": "20  b"
+        },
+        {
+          "code": "a",
+          "$t": "PO productions"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "511",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "14052245"
+        },
+        {
+          "code": "w",
+          "$t": "0  b"
+        },
+        {
+          "code": "a",
+          "$t": "Atletico records"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "600",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Auteur, compositeur, chanteur de variétés"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "603",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Bergerac (Dordogne)"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Best of love [Enregistrement sonore] / Mariah Carey, Phil Collins, Pascal Obispo, chant... [et al.]. Sony music media SMM500735"
+        },
+        {
+          "code": "a",
+          "$t": "Pascal Obispo : de A à Z / Mathias Goudeau, 2002"
+        },
+        {
+          "code": "a",
+          "$t": "Le drapeau [Enregistrement sonore] / Captain Samouraï Flower [Pascal Obispo], chant, guit., guit. b, claviers [acc. instr.]. Epic-Jive 0886975242924"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Obispo"
+        },
+        {
+          "code": "u",
+          "$t": "http://obispo.ovh.org/biographie.htm"
+        },
+        {
+          "code": "d",
+          "$t": "2002-04-02"
+        },
+        {
+          "code": "a",
+          "$t": "Libération, 1998-02-05"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "624",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "780"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPC"
+        },
+        {
+          "code": "a",
+          "$t": "100618290"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPD"
+        },
+        {
+          "code": "a",
+          "$t": "100432710"
+        },
+        {
+          "code": "b",
+          "$t": "APP"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14817053"
+        },
+        {
+          "code": "d",
+          "$t": "20060517"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "14919465"
+        },
+        {
+          "code": "d",
+          "$t": "20070228"
+        }
+      ]
+    }
+  ]
+}
