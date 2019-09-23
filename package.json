@@ -1,7 +1,7 @@
 {
   "scripts": {
     "extract": "./scripts/extract.js",
-    "etl-notices": "./scripts/etl_notices.js $@ > etl.log 2> etl.err",
+    "etl-notices": "./scripts/etl_notices.js",
     "test": "mocha"
   },
   "dependencies": {

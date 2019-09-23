@@ -33,7 +33,7 @@ Les scripts sont référencés dans le fichier [package.json](https://github.com
 
 exemple:
 
-`npm run extract echantillons/PaulVidal_BnF_13949089.txt`
+`npm run extract ./echantillons/BNF_echantillon_donnes_ALL.xml`
 
 ### Détails des scripts
 
@@ -44,22 +44,16 @@ Extrait, tranforme et charge une ou plusieurs notices dans Wikibase.
 exemple:
 
 ```sh
-npm run etl-notices echantillons/PaulVidal_BnF_13949089.txt echantillons/LesReveriesDuPromeneur_BnF_11935154.txt
-
-# > creating /path/to/poc-fne/echantillons/PaulVidal_BnF_13949089.txt
-# > creating /path/to/poc-fne/echantillons/LesReveriesDuPromeneur_BnF_11935154.txt
-# > /path/to/poc-fne/echantillons/LesReveriesDuPromeneur_BnF_11935154.json was created.
-# > /path/to/poc-fne/echantillons/PaulVidal_BnF_13949089.json was created.
-# > loaded {
-# >   "Q10": "0  b.Vidal.Paul.1863-1931",
-# >   "Q9": ".0..b.fre..Les rêveries du promeneur solitaire",
-# >   "Q11": "11922879..0..b......Rousseau.Jean-Jacques.1712-1778"
-# > }
+# Extrait, tranforme et charge les données BNF, en gardant les logs de chargement dans etl-bnf.log
+# et les logs d'erreurs dans etl-bnf.err
+npm run etl-notices ./echantillons/BNF_echantillon_donnes_ALL.xml > etl-bnf.log 2> etl-bnf.err
+# idem pour l'ABES
+npm run etl-notices ./echantillons/ABES_echantillon_donnees_ALL.xml  > etl-abes.log 2> etl-abes.err
 ```
 
 - `extract [chemin de FICHIER]`
 
-Extrait une notice (fichier `.txt`) dans un fichier JSON dans le même dossier que la notice `.txt`. Utile principalement pour des besoins de développement.
+Extrait une notice (fichier `.xml`) dans un fichier NDJSON dans le même dossier que la notice `.xml`. Utile principalement pour des besoins de développement.
 
 exemple:
 
