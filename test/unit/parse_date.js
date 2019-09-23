@@ -1,5 +1,5 @@
 require('should')
-const parseDate = require('../lib/transform/parse_date')
+const parseDate = require('../../lib/transform/parse_date')
 
 describe('parse_date', () => {
   describe('when simple subfield date value is passed', () => {
@@ -25,19 +25,14 @@ describe('parse_date', () => {
       done()
     })
   })
-  describe('when position based subfield is passed', () => {
-    it('should return date string compatible with loader', done => {
-      const subfield = {
-        code: 'd',
-        Pos: [
-          { Code: '0003', '$t': '2013' },
-          { Code: '0407', '$t': '0802' }
-        ]
-      }
-      const date = parseDate(subfield)
-      date.should.be.an.String()
-      date.should.equal('2013-08-02')
-      done()
-    })
+  it('should return date with century precision', done => {
+    const subfield = {
+      "code": "d",
+      "$t": "19..-...."
+    }
+    const value = parseDate(subfield)
+    value.should.be.an.Object()
+    value.time.should.equal('1900')
+    done()
   })
 })

@@ -1,5 +1,5 @@
 require('should')
-const sampleBNFpep = require('./fixtures/sample_BNF_pep.json')
+const sampleBNFpep = require('./fixtures/sample_BNF_pep_avec_date_incertaine.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 const getContextEntities = require('../lib/load/get_context_entities')
