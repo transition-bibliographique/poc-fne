@@ -3,6 +3,7 @@ const sampleABESpersonne = require('./fixtures/sample_ABES_personne.json')
 const sampleABESPersonneAvecDateIncertaine = require('./fixtures/sample_ABES_personne_avec_date_incertaine.json')
 const sampleABESPersonneAvecDateApproximative = require('./fixtures/sample_ABES_personne_avec_date_approximative.json')
 const sampleABESPersonneAvecDateNegative = require('./fixtures/sample_ABES_personne_avec_date_negative.json')
+const sampleABESPersonneAvecDateInvalide = require('./fixtures/sample_ABES_personne_avec_date_invalide.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
@@ -122,6 +123,12 @@ describe('create a pseudo item from an unimarc personne', () => {
       const item = parseNotice(sampleABESPersonneAvecDateNegative).items[0]
       item.claims['Date de naissance'][0].value.should.equal('-0110')
       item.claims['Date de décès'][0].value.should.equal('-0028')
+      done()
+    })
+
+    it('should try to recover invalid dates', done => {
+      const item = parseNotice(sampleABESPersonneAvecDateInvalide).items[0]
+      item.claims['Date de décès'][0].value.should.equal('1963')
       done()
     })
 

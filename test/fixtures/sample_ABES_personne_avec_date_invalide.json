@@ -1,0 +1,514 @@
+{
+  "leader": "cx  a22     3  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "027500845"
+    },
+    {
+      "tag": "003",
+      "$t": "http://www.idref.fr/027500845"
+    },
+    {
+      "tag": "004",
+      "$t": "19830301"
+    },
+    {
+      "tag": "005",
+      "$t": "20150929124530.000"
+    },
+    {
+      "tag": "006",
+      "$t": "0004"
+    },
+    {
+      "tag": "007",
+      "$t": "4994"
+    },
+    {
+      "tag": "008",
+      "$t": "Tp5"
+    }
+  ],
+  "datafield": [
+    {
+      "tag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0000000108863087"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "033",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "http://catalogue.bnf.fr/ark:/12148/cb120535268"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "028767055"
+        },
+        {
+          "code": "9",
+          "$t": "sudoc"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "08681933X"
+        },
+        {
+          "code": "9",
+          "$t": "sudoc"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN001799895"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN00362251X"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FRBNF120535260"
+        },
+        {
+          "code": "z",
+          "$t": "FRBNF12053526"
+        }
+      ]
+    },
+    {
+      "tag": "100",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "19830301afrey50      ba0"
+        }
+      ]
+    },
+    {
+      "tag": "101",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "eng"
+        }
+      ]
+    },
+    {
+      "tag": "102",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "US"
+        },
+        {
+          "code": "a",
+          "$t": "GH"
+        }
+      ]
+    },
+    {
+      "tag": "103",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "18680223"
+        },
+        {
+          "code": "b",
+          "$t": "19631963"
+        }
+      ]
+    },
+    {
+      "tag": "106",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0"
+        },
+        {
+          "code": "b",
+          "$t": "1"
+        },
+        {
+          "code": "c",
+          "$t": "0"
+        }
+      ]
+    },
+    {
+      "tag": "120",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "ba"
+        }
+      ]
+    },
+    {
+      "tag": "152",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "AFNOR"
+        }
+      ]
+    },
+    {
+      "tag": "200",
+      "ind1": " ",
+      "ind2": "1",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freeng"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Du Bois"
+        },
+        {
+          "code": "b",
+          "$t": "William Edward Burghardt"
+        },
+        {
+          "code": "f",
+          "$t": "1868-1963"
+        }
+      ]
+    },
+    {
+      "tag": "340",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Sociologue, écrivain et éditeur américain. L'année précédant sa mort, il s'installa au Ghana et devint citoyen de cette nation. Contribua à la fondation de la National association for the advancement of colored people (en 1909)"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "1",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freeng"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "DuBois"
+        },
+        {
+          "code": "b",
+          "$t": "William Edward Burghardt"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "1",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freeng"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "DuBois"
+        },
+        {
+          "code": "b",
+          "$t": "W. E. B."
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "1",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freeng"
+        },
+        {
+          "code": "a",
+          "$t": "Du Bois"
+        },
+        {
+          "code": "b",
+          "$t": "W. E. B."
+        }
+      ]
+    },
+    {
+      "tag": "510",
+      "ind1": "0",
+      "ind2": "2",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "028031407"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "National association for the advancement of colored people"
+        },
+        {
+          "code": "c",
+          "$t": "États-Unis"
+        }
+      ]
+    },
+    {
+      "tag": "801",
+      "ind1": " ",
+      "ind2": "3",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FR"
+        },
+        {
+          "code": "b",
+          "$t": "Abes"
+        },
+        {
+          "code": "c",
+          "$t": "20150929"
+        },
+        {
+          "code": "g",
+          "$t": "AFNOR"
+        },
+        {
+          "code": "h",
+          "$t": "028767055"
+        }
+      ]
+    },
+    {
+      "tag": "801",
+      "ind1": " ",
+      "ind2": "3",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FR"
+        },
+        {
+          "code": "b",
+          "$t": "Abes"
+        },
+        {
+          "code": "c",
+          "$t": "20150929"
+        },
+        {
+          "code": "g",
+          "$t": "AFNOR"
+        },
+        {
+          "code": "h",
+          "$t": "08681933X"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "WW, États-Unis, 1607-1985"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Internet, le 05-05-2005, http://en.wikipedia.org"
+        },
+        {
+          "code": "b",
+          "$t": "William Edward Burghardt DuBois (February 23, 1868  August 27, 1963) was an African-American civil rights activist, sociologist, freemason, and scholar."
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "The souls of black folk / W.E.B. Du Bois, cop. 1994"
+        }
+      ]
+    },
+    {
+      "tag": "900",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Du Bois, William Edward Burghardt (1868-1963)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "DuBois, William Edward Burghardt"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "DuBois, W. E. B."
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Du Bois, W. E. B."
+        }
+      ]
+    }
+  ]
+}
