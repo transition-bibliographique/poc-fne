@@ -1,5 +1,6 @@
 require('should')
 const sampleABESpersonne = require('./fixtures/sample_ABES_personne.json')
+const sampleABESPersonneAvecDateIncertaine = require('./fixtures/sample_ABES_personne_avec_date_incertaine.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
@@ -97,6 +98,12 @@ describe('create a pseudo item from an unimarc personne', () => {
         'identifiant de la zone': [ 'unimarc_103' ],
         'données source de la zone': [ '$a 19220305 $b 19751102' ]
       })
+      done()
+    })
+
+    it('should correcltly parse year precision dates', done => {
+      const item = parseNotice(sampleABESPersonneAvecDateIncertaine).items[0]
+      item.claims['Date de naissance'][0].value.should.equal('0329')
       done()
     })
 
