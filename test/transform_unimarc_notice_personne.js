@@ -1,6 +1,7 @@
 require('should')
 const sampleABESpersonne = require('./fixtures/sample_ABES_personne.json')
 const sampleABESPersonneAvecDateIncertaine = require('./fixtures/sample_ABES_personne_avec_date_incertaine.json')
+const sampleABESPersonneAvecDateApproximative = require('./fixtures/sample_ABES_personne_avec_date_approximative.json')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
@@ -104,6 +105,15 @@ describe('create a pseudo item from an unimarc personne', () => {
     it('should correcltly parse year precision dates', done => {
       const item = parseNotice(sampleABESPersonneAvecDateIncertaine).items[0]
       item.claims['Date de naissance'][0].value.should.equal('0329')
+      done()
+    })
+
+    it('should correcltly parse century precision dates', done => {
+      const item = parseNotice(sampleABESPersonneAvecDateApproximative).items[0]
+      item.claims['Date de naissance'][0].value.time.should.equal('1100')
+      item.claims['Date de naissance'][0].value.precision.should.equal(7)
+      item.claims['Date de décès'][0].value.time.should.equal('1200')
+      item.claims['Date de décès'][0].value.precision.should.equal(7)
       done()
     })
 
