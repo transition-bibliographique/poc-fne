@@ -1,0 +1,364 @@
+{
+  "leader": "cx  a22     3  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "026936526"
+    },
+    {
+      "tag": "003",
+      "$t": "http://www.idref.fr/026936526"
+    },
+    {
+      "tag": "004",
+      "$t": "19780109"
+    },
+    {
+      "tag": "005",
+      "$t": "20150929111330.000"
+    },
+    {
+      "tag": "006",
+      "$t": "0004"
+    },
+    {
+      "tag": "007",
+      "$t": "4994"
+    },
+    {
+      "tag": "008",
+      "$t": "Tp5"
+    }
+  ],
+  "datafield": [
+    {
+      "tag": "033",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "http://catalogue.bnf.fr/ark:/12148/cb11908688p"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "031179193"
+        },
+        {
+          "code": "9",
+          "$t": "sudoc"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN000923906"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN008111013"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FRBNF119086886"
+        },
+        {
+          "code": "z",
+          "$t": "FRBNF11908688"
+        }
+      ]
+    },
+    {
+      "tag": "100",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "19780109afreb50      ba0"
+        }
+      ]
+    },
+    {
+      "tag": "101",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "san"
+        }
+      ]
+    },
+    {
+      "tag": "102",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "IN"
+        }
+      ]
+    },
+    {
+      "tag": "103",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "11"
+        },
+        {
+          "code": "b",
+          "$t": "12"
+        }
+      ]
+    },
+    {
+      "tag": "106",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0"
+        },
+        {
+          "code": "b",
+          "$t": "1"
+        },
+        {
+          "code": "c",
+          "$t": "0"
+        }
+      ]
+    },
+    {
+      "tag": "120",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "ba"
+        }
+      ]
+    },
+    {
+      "tag": "152",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "AFNOR"
+        }
+      ]
+    },
+    {
+      "tag": "200",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0b"
+        },
+        {
+          "code": "9",
+          "$t": "0"
+        },
+        {
+          "code": "a",
+          "$t": "Jayadeva"
+        },
+        {
+          "code": "f",
+          "$t": "11..-12.."
+        }
+      ]
+    },
+    {
+      "tag": "330",
+      "ind1": "0",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Ne pas confondre avec Jayadeva, auteur du \"Prasannarāghava\""
+        }
+      ]
+    },
+    {
+      "tag": "340",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Poète indien d'expression sanskrite. Né à Kindubilva, Birbhum, Bengal. Dévot de Krishna. Auteur du \"Gītagovinda"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Jayadeva"
+        },
+        {
+          "code": "c",
+          "$t": "fils de Bhojadeva"
+        }
+      ]
+    },
+    {
+      "tag": "801",
+      "ind1": " ",
+      "ind2": "3",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FR"
+        },
+        {
+          "code": "b",
+          "$t": "Abes"
+        },
+        {
+          "code": "c",
+          "$t": "20150929"
+        },
+        {
+          "code": "g",
+          "$t": "AFNOR"
+        },
+        {
+          "code": "h",
+          "$t": "031179193"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Gita govinda: danses et poème d'amour / Jayadeva, 1988"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "The Natl. Bibliogr. of Indian lit. / gen. ed. B.S. Kesavan, 1970.- Vol. III, p. 467"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "L'Inde classique / par L. Renou et J. Filliozat, 1947.- Vol. I, p. 442"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Dictionnaire de la civilisation indienne / L. Frédéric, 1987"
+        }
+      ]
+    },
+    {
+      "tag": "900",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Jayadeva (11..-12..)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Jayadeva (fils de Bhojadeva)"
+        }
+      ]
+    }
+  ]
+}

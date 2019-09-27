@@ -1,0 +1,633 @@
+{
+  "leader": "cx  a22     3  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "027208362"
+    },
+    {
+      "tag": "003",
+      "$t": "http://www.idref.fr/027208362"
+    },
+    {
+      "tag": "004",
+      "$t": "19850522"
+    },
+    {
+      "tag": "005",
+      "$t": "20171124031036.000"
+    },
+    {
+      "tag": "006",
+      "$t": "0004"
+    },
+    {
+      "tag": "007",
+      "$t": "4994"
+    },
+    {
+      "tag": "008",
+      "$t": "Tp5"
+    }
+  ],
+  "datafield": [
+    {
+      "tag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0000000391961028"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20171123"
+        }
+      ]
+    },
+    {
+      "tag": "033",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "http://catalogue.bnf.fr/ark:/12148/cb119300385"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "027933601"
+        },
+        {
+          "code": "9",
+          "$t": "sudoc"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN001504932"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN002255455"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FRBNF119300386"
+        },
+        {
+          "code": "z",
+          "$t": "FRBNF11930038"
+        }
+      ]
+    },
+    {
+      "tag": "100",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "19850522afrey50      ba0"
+        }
+      ]
+    },
+    {
+      "tag": "101",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "grc"
+        }
+      ]
+    },
+    {
+      "tag": "102",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "GR"
+        }
+      ]
+    },
+    {
+      "tag": "103",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "-0110    ?"
+        },
+        {
+          "code": "b",
+          "$t": "-0028    ?"
+        }
+      ]
+    },
+    {
+      "tag": "106",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0"
+        },
+        {
+          "code": "b",
+          "$t": "1"
+        },
+        {
+          "code": "c",
+          "$t": "0"
+        }
+      ]
+    },
+    {
+      "tag": "120",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "ba"
+        }
+      ]
+    },
+    {
+      "tag": "152",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "AFNOR"
+        }
+      ]
+    },
+    {
+      "tag": "200",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frefre"
+        },
+        {
+          "code": "9",
+          "$t": "1"
+        },
+        {
+          "code": "a",
+          "$t": "Philodème"
+        },
+        {
+          "code": "f",
+          "$t": "0110?-0028? av. J.-C."
+        }
+      ]
+    },
+    {
+      "tag": "340",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Philosophe grec de l'école épicurienne, disciple de Zénon de Sidon. Également auteur d'épigrammes et d'ouvrages sur la musique et la poésie. Sans doute né à Gadara, centre culturel hellénistique. Il vint à Rome en 70 av. J.-C., mais vécut surtout à Naples"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Philodemus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0a"
+        },
+        {
+          "code": "8",
+          "$t": "fregrc"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Filódīmos"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0b"
+        },
+        {
+          "code": "8",
+          "$t": "fregrc"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Filódēmos"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "fregrc"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Filodêmos"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freita"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Filodemo"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frefre"
+        },
+        {
+          "code": "a",
+          "$t": "Philodème de Gadara"
+        }
+      ]
+    },
+    {
+      "tag": "530",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "032105916"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Collection des philosophes"
+        }
+      ]
+    },
+    {
+      "tag": "700",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "0"
+        },
+        {
+          "code": "a",
+          "$t": "Philodemus Gadarensis"
+        },
+        {
+          "code": "f",
+          "$t": "0110?-0028? av. J.-C."
+        }
+      ]
+    },
+    {
+      "tag": "801",
+      "ind1": " ",
+      "ind2": "3",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FR"
+        },
+        {
+          "code": "b",
+          "$t": "Abes"
+        },
+        {
+          "code": "c",
+          "$t": "20171124"
+        },
+        {
+          "code": "g",
+          "$t": "AFNOR"
+        },
+        {
+          "code": "h",
+          "$t": "027933601"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Il quinto libro della \"Poetica\" : PHerc. 1425 e 1538 / Filodemo ; ed., trad. e comment. a cura di Cecilia Mangoni, 1993"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "GDEL"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Dictionnaire des auteurs grecs et latins de l'Antiquité et du Moyen âge / Wolfgang Buchwald, Armin Hohlweg, Otto Prinz ; trad. et mis à jour par Jean Denis Berger et Jacques Billen, 1991"
+        },
+        {
+          "code": "b",
+          "$t": "Philodème"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clavis SGL"
+        },
+        {
+          "code": "b",
+          "$t": "Philodemus Gadarensis, ca 110-ca 40 AC"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "BN Cat. gén."
+        },
+        {
+          "code": "b",
+          "$t": "Philodème"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "BN Cat. gén. 1960-1969"
+        },
+        {
+          "code": "b",
+          "$t": "Philodemus"
+        }
+      ]
+    },
+    {
+      "tag": "900",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Philodème (0110?-0028? av. J.-C.)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Philodemus"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Filódīmos"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Filódēmos"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Filodêmos"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Filodemo"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Philodème de Gadara"
+        }
+      ]
+    },
+    {
+      "tag": "902",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Philodemus Gadarensis (0110?-0028? av. J.-C.)"
+        }
+      ]
+    }
+  ]
+}

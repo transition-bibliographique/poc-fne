@@ -1,0 +1,253 @@
+{
+  "format": "INTERMARC",
+  "id": "ark:/12148/cb119072917",
+  "type": "Authority",
+  "leader": "00660c0 ap2200027   45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "FRBNF119072915"
+    },
+    {
+      "tag": "003",
+      "$t": "http://catalogue.bnf.fr/ark:/12148/cb119072917"
+    },
+    {
+      "tag": "008",
+      "$t": "750905170706frfrem          19..                           a 1"
+    }
+  ],
+  "datafield": [
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "031",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0000000081348682"
+        },
+        {
+          "code": "2",
+          "$t": "ISNI"
+        },
+        {
+          "code": "d",
+          "$t": "20131217"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "045",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "a"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "100",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": ".0..b....."
+        },
+        {
+          "code": "a",
+          "$t": "Henry"
+        },
+        {
+          "code": "m",
+          "$t": "Pierre"
+        },
+        {
+          "code": "d",
+          "$t": "19..-...."
+        },
+        {
+          "code": "e",
+          "$t": "guide de haute montagne"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "La chaîne du Mont Blanc / Lucien Devies, Pierre Henry, 1975-"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "BN Cat. gén. suppl. ; BN Cat. gén. 1960-1969 : Henry (Pierre), guide de haute montagne"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "907",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "GEA"
+        },
+        {
+          "code": "a",
+          "$t": "003871980"
+        },
+        {
+          "code": "b",
+          "$t": "APP"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPL"
+        },
+        {
+          "code": "a",
+          "$t": "000885989"
+        },
+        {
+          "code": "b",
+          "$t": "APP"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "11332779"
+        },
+        {
+          "code": "d",
+          "$t": "20060510"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "11576493"
+        },
+        {
+          "code": "d",
+          "$t": "20060510"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "16481617"
+        },
+        {
+          "code": "d",
+          "$t": "20170706"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "15440243"
+        },
+        {
+          "code": "d",
+          "$t": "20170706"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "11801926"
+        },
+        {
+          "code": "d",
+          "$t": "20170706"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "996",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPP"
+        },
+        {
+          "code": "a",
+          "$t": "10903787"
+        },
+        {
+          "code": "d",
+          "$t": "20170706"
+        }
+      ]
+    }
+  ]
+}

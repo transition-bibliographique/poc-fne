@@ -1,0 +1,108 @@
+{
+  "format": "INTERMARC",
+  "id": "ark:/12148/cb119455964",
+  "type": "Authority",
+  "leader": "00452c0 am22000272  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "FRBNF119455963"
+    },
+    {
+      "tag": "003",
+      "$t": "http://catalogue.bnf.fr/ark:/12148/cb119455964"
+    },
+    {
+      "tag": "008",
+      "$t": "820527930331                                                 200"
+    }
+  ],
+  "datafield": [
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "167",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": "....b....."
+        },
+        {
+          "code": "a",
+          "$t": "Paititi"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "502",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "11939569"
+        },
+        {
+          "code": "w",
+          "$t": "....b....."
+        },
+        {
+          "code": "a",
+          "$t": "Mythes géographiques"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "600",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Paititi est selon la mythologie inca, une ville disparue qui aurait servi d'ultime refuge aux nobles de Cuzco lors de la conquête espagnole"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Paititi : dernier refuge des Incas / N. et H. Cartagena, 1981"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "907",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "GEA"
+        },
+        {
+          "code": "a",
+          "$t": "000694165"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "917",
+      "subfields": [
+        {
+          "code": "o",
+          "$t": "OPL"
+        },
+        {
+          "code": "a",
+          "$t": "001704801"
+        }
+      ]
+    }
+  ]
+}

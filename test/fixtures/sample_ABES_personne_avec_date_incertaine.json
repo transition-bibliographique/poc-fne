@@ -1,0 +1,970 @@
+{
+  "leader": "cx  a22     3  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "026708426"
+    },
+    {
+      "tag": "003",
+      "$t": "http://www.idref.fr/026708426"
+    },
+    {
+      "tag": "004",
+      "$t": "19780828"
+    },
+    {
+      "tag": "005",
+      "$t": "20190709175529.000"
+    },
+    {
+      "tag": "006",
+      "$t": "0004"
+    },
+    {
+      "tag": "007",
+      "$t": "751052342"
+    },
+    {
+      "tag": "008",
+      "$t": "Tp5"
+    }
+  ],
+  "datafield": [
+    {
+      "tag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0000000121029433"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "033",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "http://catalogue.bnf.fr/ark:/12148/cb11890479x"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "027272729"
+        },
+        {
+          "code": "9",
+          "$t": "sudoc"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN00156506X"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN000442634"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FRBNF11890479X"
+        },
+        {
+          "code": "z",
+          "$t": "FRBNF11890479"
+        }
+      ]
+    },
+    {
+      "tag": "100",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "19780828afrey50      ba0"
+        }
+      ]
+    },
+    {
+      "tag": "101",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "grc"
+        }
+      ]
+    },
+    {
+      "tag": "102",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "XX"
+        }
+      ]
+    },
+    {
+      "tag": "103",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0329    ?"
+        },
+        {
+          "code": "b",
+          "$t": "03790101"
+        }
+      ]
+    },
+    {
+      "tag": "106",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0"
+        },
+        {
+          "code": "b",
+          "$t": "1"
+        },
+        {
+          "code": "c",
+          "$t": "0"
+        }
+      ]
+    },
+    {
+      "tag": "120",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "ba"
+        }
+      ]
+    },
+    {
+      "tag": "152",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "AFNOR"
+        }
+      ]
+    },
+    {
+      "tag": "200",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frefre"
+        },
+        {
+          "code": "9",
+          "$t": "1"
+        },
+        {
+          "code": "a",
+          "$t": "Basile de Césarée"
+        },
+        {
+          "code": "f",
+          "$t": "0329?-0379"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "340",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Père de l'Église grecque. Évêque de Césarée. Auteur de deux \"Règles\" monastiques"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freeng"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basil"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freeng"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basil of Caesarea"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freeng"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basil the Great"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frefre"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basile"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frefre"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basile le Grand"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freita"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basilio di Cesarea"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basilius"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basilius Magnus"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "freger"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basilius von Caesarea"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "fregrc"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Basileios ho Mégas"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0a"
+        },
+        {
+          "code": "8",
+          "$t": "freara"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "باسيليوس قيصرية"
+        },
+        {
+          "code": "c",
+          "$t": "القديس"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0a"
+        },
+        {
+          "code": "8",
+          "$t": "freara"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "باسيليوس الكبير"
+        },
+        {
+          "code": "c",
+          "$t": "القديس"
+        }
+      ]
+    },
+    {
+      "tag": "550",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "111830818"
+        },
+        {
+          "code": "5",
+          "$t": "z|xxx"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Basiliens"
+        }
+      ]
+    },
+    {
+      "tag": "700",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "0"
+        },
+        {
+          "code": "a",
+          "$t": "Basilius Caesariensis"
+        },
+        {
+          "code": "f",
+          "$t": "0329?-0379"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "700",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "fregre"
+        },
+        {
+          "code": "9",
+          "$t": "0"
+        },
+        {
+          "code": "a",
+          "$t": "Vasíleios ho Mégas"
+        },
+        {
+          "code": "f",
+          "$t": "0329?-0379"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "700",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "fregre"
+        },
+        {
+          "code": "9",
+          "$t": "0"
+        },
+        {
+          "code": "a",
+          "$t": "Βασίλειος ὁ Μέγας"
+        },
+        {
+          "code": "f",
+          "$t": "0329?-0379"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "801",
+      "ind1": " ",
+      "ind2": "3",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FR"
+        },
+        {
+          "code": "b",
+          "$t": "Abes"
+        },
+        {
+          "code": "c",
+          "$t": "20190709"
+        },
+        {
+          "code": "g",
+          "$t": "AFNOR"
+        },
+        {
+          "code": "h",
+          "$t": "027272729"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Sur le baptême / Basile de Césarée ; trad. et annotation par J. Ducatillon, 1989"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "GDEL"
+        },
+        {
+          "code": "b",
+          "$t": "Basile (saint), surnommé le Grand"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "BN Cat. gén."
+        },
+        {
+          "code": "b",
+          "$t": "Basile (Saint) le Grand, archevêque de Césarée"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "BN Cat. gén. 1960-1969"
+        },
+        {
+          "code": "b",
+          "$t": "Basilius (Saint), archevêque de Césarée"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "The Oxford Dictionary of the Christian Church/F. L. Cross, 1966"
+        }
+      ]
+    },
+    {
+      "tag": "900",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basile de Césarée (saint ; 0329?-0379)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basil (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basil of Caesarea (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basil the Great (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basile (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basile le Grand (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basilio di Cesarea (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basilius (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basilius Magnus (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basilius von Caesarea (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basileios ho Mégas (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "باسيليوس قيصرية (القديس)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "باسيليوس الكبير (القديس)"
+        }
+      ]
+    },
+    {
+      "tag": "902",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Basilius Caesariensis (saint ; 0329?-0379)"
+        }
+      ]
+    },
+    {
+      "tag": "902",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Vasíleios ho Mégas (saint ; 0329?-0379)"
+        }
+      ]
+    },
+    {
+      "tag": "902",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Βασίλειος ὁ Μέγας (saint ; 0329?-0379)"
+        }
+      ]
+    }
+  ]
+}

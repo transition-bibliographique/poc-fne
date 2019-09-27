@@ -1,14 +1,13 @@
 require('should')
 const sampleABESwork = require('./fixtures/sample_ABES_work.json')
 const sampleABESpersonne = require('./fixtures/sample_ABES_personne.json')
-const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 
 describe('intermarc common pivot property claims', () => {
   it('should return "URL pérenne" claims', done => {
     const item = parseNotice(sampleABESwork).items[0]
-    item.claims["URL pérenne"].should.be.an.Array()
-    const claim = item.claims["URL pérenne"][0]
+    item.claims['URL pérenne'].should.be.an.Array()
+    const claim = item.claims['URL pérenne'][0]
     claim.value.should.equal('http://www.idref.fr/082349983')
     claim.references.should.be.an.Array()
     const reference = claim.references[0]
@@ -35,8 +34,8 @@ describe('intermarc common pivot property claims', () => {
 
   it('should return "Identifiant ISNI" claims', done => {
     const item = parseNotice(sampleABESpersonne).items[0]
-    item.claims["Identifiant ISNI"].should.be.an.Array()
-    const claim = item.claims["Identifiant ISNI"][0]
+    item.claims['Identifiant ISNI'].should.be.an.Array()
+    const claim = item.claims['Identifiant ISNI'][0]
     claim.value.should.equal('0000000121334091')
     claim.references.should.be.an.Array()
     claim.references[0].should.deepEqual({

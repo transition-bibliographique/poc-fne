@@ -1,0 +1,150 @@
+{
+  "format": "INTERMARC",
+  "id": "ark:/12148/cb10357852v",
+  "type": "Authority",
+  "leader": "00718c1 ap22000272  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "FRBNF10357852X"
+    },
+    {
+      "tag": "003",
+      "$t": "http://catalogue.bnf.fr/ark:/12148/cb10357852v"
+    },
+    {
+      "tag": "008",
+      "$t": "970701070524plpolm          1793    ? 18550816             a 010"
+    }
+  ],
+  "datafield": [
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "031",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0000000000783894"
+        },
+        {
+          "code": "2",
+          "$t": "VIAF"
+        },
+        {
+          "code": "d",
+          "$t": "20130716"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "045",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "a"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "100",
+      "subfields": [
+        {
+          "code": "w",
+          "$t": ".0..b....."
+        },
+        {
+          "code": "a",
+          "$t": "Jeżowski"
+        },
+        {
+          "code": "m",
+          "$t": "Józef"
+        },
+        {
+          "code": "d",
+          "$t": "1793?-1855"
+        }
+      ]
+    },
+    {
+      "ind1": "2",
+      "ind2": " ",
+      "tag": "511",
+      "subfields": [
+        {
+          "code": "3",
+          "$t": "12297151"
+        },
+        {
+          "code": "w",
+          "$t": "20 .b....."
+        },
+        {
+          "code": "a",
+          "$t": "Filomaci"
+        },
+        {
+          "code": "q",
+          "$t": "Société littéraire"
+        },
+        {
+          "code": "c",
+          "$t": "Vilnius"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "600",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Philologue, spécialiste la littérature classique, érudit, pédagogue"
+        },
+        {
+          "code": "a",
+          "$t": "Un des fondateurs et président de la Société des philomates"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Horacyusza Ody celnieysze stosownie do użytku szkół objaśnione / przez Józefa Jeżowskiego, 1821"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Pol. slown. biogr., 1935-"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "tag": "610",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "BnF Service polonais"
+        }
+      ]
+    }
+  ]
+}

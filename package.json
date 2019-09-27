@@ -5,9 +5,10 @@
     "test": "mocha"
   },
   "dependencies": {
+    "chalk": "^2.4.2",
     "lodash": "^4.17.15",
     "node-fetch": "^2.6.0",
-    "wikibase-edit": "^3.0.3",
+    "wikibase-edit": "^3.2.2",
     "wikibase-sdk": "^7.0.9",
     "xml2json": "^0.11.2"
   },
@@ -18,7 +19,8 @@
   "standard": {
     "globals": [
       "it",
-      "describe"
+      "describe",
+      "should"
     ]
   }
 }

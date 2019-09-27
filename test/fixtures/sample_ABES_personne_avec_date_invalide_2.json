@@ -1,0 +1,2713 @@
+{
+  "leader": "cx  a22     3  45",
+  "controlfield": [
+    {
+      "tag": "001",
+      "$t": "028732642"
+    },
+    {
+      "tag": "003",
+      "$t": "http://www.idref.fr/028732642"
+    },
+    {
+      "tag": "004",
+      "$t": "19840420"
+    },
+    {
+      "tag": "005",
+      "$t": "20190709161109.000"
+    },
+    {
+      "tag": "006",
+      "$t": "0004"
+    },
+    {
+      "tag": "007",
+      "$t": "341720001"
+    },
+    {
+      "tag": "008",
+      "$t": "Tp5"
+    }
+  ],
+  "datafield": [
+    {
+      "tag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0000000091885959"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "033",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "http://catalogue.bnf.fr/ark:/12148/cb120508131"
+        },
+        {
+          "code": "2",
+          "$t": "BNF"
+        },
+        {
+          "code": "d",
+          "$t": "20150918"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "028494911"
+        },
+        {
+          "code": "9",
+          "$t": "sudoc"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN003095929"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "frBN003538972"
+        }
+      ]
+    },
+    {
+      "tag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FRBNF120508135"
+        },
+        {
+          "code": "z",
+          "$t": "FRBNF12050813"
+        }
+      ]
+    },
+    {
+      "tag": "100",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "19840420afrey50      ba0"
+        }
+      ]
+    },
+    {
+      "tag": "101",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "grc"
+        }
+      ]
+    },
+    {
+      "tag": "102",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "XX"
+        }
+      ]
+    },
+    {
+      "tag": "103",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "00XX"
+        },
+        {
+          "code": "b",
+          "$t": "0097    ?"
+        }
+      ]
+    },
+    {
+      "tag": "106",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "0"
+        },
+        {
+          "code": "b",
+          "$t": "1"
+        },
+        {
+          "code": "c",
+          "$t": "0"
+        }
+      ]
+    },
+    {
+      "tag": "152",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "AFNOR"
+        }
+      ]
+    },
+    {
+      "tag": "200",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "5",
+          "$t": "i|xxx"
+        },
+        {
+          "code": "8",
+          "$t": "frefre"
+        },
+        {
+          "code": "9",
+          "$t": "1"
+        },
+        {
+          "code": "a",
+          "$t": "Clément"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "f",
+          "$t": "00..-0097?"
+        },
+        {
+          "code": "c",
+          "$t": "pape"
+        }
+      ]
+    },
+    {
+      "tag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Pape de 88 à 97. Souffrit le martyre pendant la persécution de Trajan. On lui a attribué les \"Apocryphes clémentins\". Auteur d'une Epître aux Corinthiens"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "5",
+          "$t": "i|xxx"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clément"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "5",
+          "$t": "i|xxx"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "5",
+          "$t": "i|xxx"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clément"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clément de Rome"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clément"
+        },
+        {
+          "code": "c",
+          "$t": "de Rome"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens Romanus"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens Romanus"
+        },
+        {
+          "code": "c",
+          "$t": "sanctus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "c",
+          "$t": "sanctus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Romanus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "c",
+          "$t": "Romanus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "frelat"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "papa Romanus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "fregrc"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klêmês Rômês"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "8",
+          "$t": "fregrc"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klêmês"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens I Romanus"
+        },
+        {
+          "code": "c",
+          "$t": "paus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemente"
+        },
+        {
+          "code": "f",
+          "$t": "séc. 1"
+        },
+        {
+          "code": "c",
+          "$t": "de Roma"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemente Romano PP"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemente"
+        },
+        {
+          "code": "c",
+          "$t": "Romano"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemente"
+        },
+        {
+          "code": "c",
+          "$t": "papa"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemente"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Papa, Santo"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemente"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Santo"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clement"
+        },
+        {
+          "code": "c",
+          "$t": "Sanctus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clement"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "papa"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Climent"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "papa"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "c",
+          "$t": "PP. I"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "papa"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "paus"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "påve"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clement"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Pope"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Pope Clement I"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Kelemen"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Pope"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Pope"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "påve"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "of Rome"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clement"
+        },
+        {
+          "code": "c",
+          "$t": "of Rome"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "von Rome"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "van Rome"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Clemens"
+        },
+        {
+          "code": "c",
+          "$t": "den Romein"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Papst"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "von Rome"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klēmēs"
+        },
+        {
+          "code": "c",
+          "$t": "ho Romēs"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klēmēs"
+        },
+        {
+          "code": "c",
+          "$t": "Romaios"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klemens"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "papież"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klement"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "papež"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klement"
+        },
+        {
+          "code": "c",
+          "$t": "svatý"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Sveti Klement"
+        },
+        {
+          "code": "c",
+          "$t": "rimski biskup"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klement"
+        },
+        {
+          "code": "c",
+          "$t": "Sveti"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klement"
+        },
+        {
+          "code": "c",
+          "$t": "Rimski"
+        },
+        {
+          "code": "c",
+          "$t": "sveti"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klement"
+        },
+        {
+          "code": "c",
+          "$t": "Rimski"
+        },
+        {
+          "code": "c",
+          "$t": "papa"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klemens"
+        },
+        {
+          "code": "c",
+          "$t": "Rzymski"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Kliment"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "saint"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Kliment"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Rimskīĭ"
+        },
+        {
+          "code": "c",
+          "$t": "Pope"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klyment"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Pope"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klyment"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Rymsʹkyĭ"
+        },
+        {
+          "code": "c",
+          "$t": "Pope"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klyment"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Rymskyi"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klyment"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Římský"
+        },
+        {
+          "code": "c",
+          "$t": "papež"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Klymentiĭ"
+        },
+        {
+          "code": "d",
+          "$t": "I"
+        },
+        {
+          "code": "c",
+          "$t": "Pope"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "اقليمس"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "اكليمندس الروماني"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Iklīmindis al-Rūmānī"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "9",
+          "$t": "#"
+        },
+        {
+          "code": "a",
+          "$t": "Qlimis"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "6",
+          "$t": "a01"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yga0y"
+        },
+        {
+          "code": "a",
+          "$t": "Κλήμης ο Ρώμης"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "6",
+          "$t": "a01"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Klī́mīs o Rṓmīs"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "6",
+          "$t": "a02"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yga0y"
+        },
+        {
+          "code": "a",
+          "$t": "Κλήμης Α´"
+        }
+      ]
+    },
+    {
+      "tag": "400",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "6",
+          "$t": "a02"
+        },
+        {
+          "code": "7",
+          "$t": "ba0yba0y"
+        },
+        {
+          "code": "a",
+          "$t": "Klī́mīs A´"
+        }
+      ]
+    },
+    {
+      "tag": "801",
+      "ind1": " ",
+      "ind2": "3",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "FR"
+        },
+        {
+          "code": "b",
+          "$t": "Abes"
+        },
+        {
+          "code": "c",
+          "$t": "20190709"
+        },
+        {
+          "code": "g",
+          "$t": "AFNOR"
+        },
+        {
+          "code": "h",
+          "$t": "028494911"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Épître de Clément de Rome ; trad. par Soeur Suzanne-Dominique, 1979"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "GDEL"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Migne"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Mourre, 1986"
+        },
+        {
+          "code": "b",
+          "$t": "Clément I (pape)"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Annu. pontificio, 1992"
+        }
+      ]
+    },
+    {
+      "tag": "810",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "VIAF, http://viaf.org/viaf/100251470/#Clement_I,_Pope"
+        }
+      ]
+    },
+    {
+      "tag": "900",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clément I (pape ; 00..-0097?)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clément I (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clément (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clément de Rome (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clément (de Rome)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens Romanus (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens Romanus (sanctus)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens (sanctus)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I (Romanus)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens (Romanus)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I (papa Romanus)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klêmês Rômês"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klêmês I"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I Romanus (paus)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemente (de Roma ; séc. 1)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemente Romano PP"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemente (Romano)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemente (papa)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemente I (Papa, Santo)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemente I (Santo)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clement (Sanctus)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clement I (papa)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Climent I (papa)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens (PP. I)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I (papa)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I (paus)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I (påve)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clement I (Pope)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Pope Clement I"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Kelemen I (Pope)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klemens I (Pope)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klemens I (påve)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klemens I (of Rome)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clement (of Rome)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I (von Rome)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens I (van Rome)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Clemens (den Romein)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klemens I (Papst)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klemens I (von Rome)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klēmēs (ho Romēs)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klēmēs (Romaios)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klemens I (papież)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klement I (papež)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klement (svatý)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Sveti Klement (rimski biskup)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klement (Sveti)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klement (Rimski ; sveti)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klement (Rimski ; papa)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klemens (Rzymski)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Kliment I (saint)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Kliment I (Rimskīĭ ; Pope)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klyment I (Pope)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klyment I (Rymsʹkyĭ ; Pope)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klyment I (Rymskyi)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klyment I (Římský ; papež)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Klymentiĭ I (Pope)"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "اقليمس"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "اكليمندس الروماني"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Iklīmindis al-Rūmānī"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "$t": "Qlimis"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "6",
+          "$t": "01"
+        },
+        {
+          "code": "7",
+          "$t": "ga"
+        },
+        {
+          "code": "a",
+          "$t": "Κλήμης ο Ρώμης"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "6",
+          "$t": "01"
+        },
+        {
+          "code": "7",
+          "$t": "ba"
+        },
+        {
+          "code": "a",
+          "$t": "Klī́mīs o Rṓmīs"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "6",
+          "$t": "02"
+        },
+        {
+          "code": "7",
+          "$t": "ga"
+        },
+        {
+          "code": "a",
+          "$t": "Κλήμης Α´"
+        }
+      ]
+    },
+    {
+      "tag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "6",
+          "$t": "02"
+        },
+        {
+          "code": "7",
+          "$t": "ba"
+        },
+        {
+          "code": "a",
+          "$t": "Klī́mīs A´"
+        }
+      ]
+    }
+  ]
+}
