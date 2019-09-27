@@ -47,10 +47,4 @@ describe('intermarc common pivot property claims', () => {
     })
     done()
   })
-
-  it('should return a specific property when repeated field/tag/zone', done => {
-    const item = parseNotice(sampleABESpersonne).items[0]
-    item.claims['unimarc_033_1_a_0'].should.be.an.Array()
-    done()
-  })
 })
