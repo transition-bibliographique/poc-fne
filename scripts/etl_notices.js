@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const path = require('path')
 const extract = require('../lib/extract/extract')
-const transformAndLoadNotice = require('../lib/transform_and_load_notice')
 const parseProperties = require('../lib/transform/parse_properties')
 const parseNotice = require('../lib/transform/parse_notice')
 const getContextEntities = require('../lib/load/get_context_entities')

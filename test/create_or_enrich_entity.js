@@ -1,6 +1,5 @@
 require('should')
 const createOrEnrich = require('../lib/load/create_or_enrich_entity')
-const { uniqueId } = require('lodash')
 const timestamp = () => (new Date()).getTime()
 
 describe('create or enrich entity', function () {

@@ -27,8 +27,8 @@ describe('parse_date', () => {
   })
   it('should return date with century precision', done => {
     const subfield = {
-      "code": "d",
-      "$t": "19..-...."
+      'code': 'd',
+      '$t': '19..-....'
     }
     const value = parseDate(subfield)
     value.should.be.an.Object()
