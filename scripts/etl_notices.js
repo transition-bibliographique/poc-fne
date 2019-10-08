@@ -22,12 +22,15 @@ const getAndExtractNotices = (noticesDumpPath) => {
   return readFile(jsonNoticePath)
     .then(parseRecords(jsonNoticePath))
     .catch(extractIfMissing(noticesDumpPath, jsonNoticePath))
+    .then((notices) => {
+      console.log(jsonNoticePath, 'number of records:', notices.length)
+      return notices
+    })
 }
 
 const parseRecords = (jsonNoticePath) => (buf) => {
   const ndjson = buf.toString().trim()
   const lines = ndjson.split('\n')
-  console.log(jsonNoticePath, 'number of records:', lines.length)
   return lines.map(JSON.parse)
 }
 
