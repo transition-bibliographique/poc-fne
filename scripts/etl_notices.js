@@ -9,6 +9,9 @@ const loadItems = require('../lib/load/load_items')
 const { readFile } = require('../lib/fs')
 const { flatten } = require('lodash')
 const { red } = require('chalk')
+const { timestamp, start, end, step } = require('../lib/timers')
+
+console.log('start', timestamp())
 
 const noticesDumpPaths = process.argv.slice(2)
   .filter(noticesDumpPath => noticesDumpPath.match(/\.(xml|ndjson)$/))
@@ -92,12 +95,20 @@ const getIdsMap = (res) => {
   }, {})
 }
 
+start('etl')
+start('extract')
+
 Promise.all(noticesDumpPaths.map(getAndExtractNotices))
 .then(flatten)
+.then(step({ end: 'extract', start: 'transform' }))
 .then(transformNotices)
+.then(step({ end: 'transform', start: 'load' }))
 .then(loadNotices)
+.then(step({ end: 'load' }))
 .then((res) => {
   const idsMap = getIdsMap(res)
   console.log('loaded', JSON.stringify(idsMap, null, 2))
+  end('etl')
+  console.log('end', timestamp())
 })
 .catch(console.error)
