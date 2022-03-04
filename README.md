@@ -1,5 +1,7 @@
 # PoC FNE basé sur Wikibase
 
+**Ce dépôt n'est plus maintenu depuis fin 2019 : il a permis de réaliser une preuve de concept basé sur le logiciel wikibase dans le but de construire l'application national FNE dans laquelle la BnF et l'Abes co-produiront leurs entités**
+
 Preuve de concept de modélisation de données d’autorité pour un outil de production mutualisée "Fichier National d'Entités" ([ABES](http://www.abes.fr/)-[BNF](https://www.bnf.fr/fr)) basé sur Wikibase (réalisé en 2019).
 
 
